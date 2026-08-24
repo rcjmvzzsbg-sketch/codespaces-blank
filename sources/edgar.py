@@ -1,6 +1,6 @@
 # sources/edgar.py
-"""SEC EDGAR — merges ALL candidate tags for full multi-year coverage,
-solving the 'company switched XBRL concept between years' problem."""
+"""SEC EDGAR — captures BOTH annual (full-year) and quarterly data points.
+Annual: for fiscal-year ratios & growth. Quarterly: for TTM freshness."""
 
 import re
 import requests
@@ -10,6 +10,8 @@ from mappings.xbrl_tags import XBRL_MAP
 HEADERS = {"User-Agent": "Stock Screener rcjmvzzsbg@example.com"}
 _ANNUAL_FRAME = re.compile(r"^CY\d{4}$")
 _YEAREND_FRAME = re.compile(r"^CY\d{4}Q4I$")
+_QTR_FRAME = re.compile(r"^CY\d{4}Q[1-4]$")      # e.g. CY2026Q2 (duration)
+_QTR_INSTANT = re.compile(r"^CY\d{4}Q[1-4]I$")   # e.g. CY2026Q2I (balance snapshot)
 
 
 @register_source
@@ -23,13 +25,11 @@ class EdgarSource(BaseSource):
         resp.raise_for_status()
         return resp.json()
 
-    def _extract_all_years(self, facts: dict, tags: list[str], unit: str = "USD"):
-        """MERGE annual data across all candidate tags for full coverage.
-        Priority tag (first in list) wins on conflicts; later tags fill gaps."""
+    def _extract(self, facts: dict, tags: list[str], unit: str = "USD"):
+        """Return (annual_map, quarterly_map) merged across all candidate tags."""
         us_gaap = facts.get("facts", {}).get("us-gaap", {})
-        merged = {}  # {period_end: value}
-        # Iterate in REVERSE so priority (first) tag overwrites last -> wins.
-        for tag in reversed(tags):
+        annual, quarterly = {}, {}
+        for tag in reversed(tags):  # priority tag (first) overwrites -> wins
             node = us_gaap.get(tag)
             if not node:
                 continue
@@ -40,8 +40,10 @@ class EdgarSource(BaseSource):
             for p in points:
                 frame = p.get("frame", "")
                 if _ANNUAL_FRAME.match(frame) or _YEAREND_FRAME.match(frame):
-                    merged[p["end"]] = p["val"]
-        return merged
+                    annual[p["end"]] = p["val"]
+                elif _QTR_FRAME.match(frame) or _QTR_INSTANT.match(frame):
+                    quarterly[p["end"]] = p["val"]
+        return annual, quarterly
 
     def fetch(self, ticker: str, cik: str | None = None) -> list[dict]:
         if cik is None:
@@ -58,10 +60,17 @@ class EdgarSource(BaseSource):
 
         rows = []
         for metric, tags in XBRL_MAP.items():
-            for period, value in self._extract_all_years(facts, tags).items():
+            annual, quarterly = self._extract(facts, tags)
+            for period, value in annual.items():
                 rows.append({
-                    "ticker": ticker, "metric": metric,
-                    "period": period, "period_type": "annual",
-                    "value": value, "unit": "USD", "source": "edgar",
+                    "ticker": ticker, "metric": metric, "period": period,
+                    "period_type": "annual", "value": value,
+                    "unit": "USD", "source": "edgar",
+                })
+            for period, value in quarterly.items():
+                rows.append({
+                    "ticker": ticker, "metric": metric, "period": period,
+                    "period_type": "quarterly", "value": value,
+                    "unit": "USD", "source": "edgar",
                 })
         return rows
