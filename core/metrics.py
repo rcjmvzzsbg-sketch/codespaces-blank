@@ -254,3 +254,57 @@ def cash_conversion(fcf, ni):
     if fcf is None or ni in (None, 0):
         return None
     return fcf / ni * 100
+
+
+# --- Efficiency / working-capital ratios ----------------------------------
+@derive("dso", ["receivables", "revenue"], "efficiency", unit="days", higher_better=False)
+def dso(rec, rev):
+    """Days Sales Outstanding: avg days to collect receivables."""
+    if rec is None or rev in (None, 0):
+        return None
+    return rec / rev * 365
+
+@derive("dio", ["inventory", "cost_of_revenue"], "efficiency", unit="days", higher_better=False)
+def dio(inv, cogs):
+    """Days Inventory Outstanding: avg days inventory is held."""
+    if inv is None or cogs in (None, 0):
+        return None
+    return inv / cogs * 365
+
+@derive("dpo", ["accounts_payable", "cost_of_revenue"], "efficiency", unit="days", higher_better=True)
+def dpo(ap, cogs):
+    """Days Payable Outstanding: avg days to pay suppliers (higher = keep cash longer)."""
+    if ap is None or cogs in (None, 0):
+        return None
+    return ap / cogs * 365
+
+@derive("cash_conversion_cycle", ["dso", "dio", "dpo"], "efficiency", unit="days", higher_better=False)
+def cash_conversion_cycle(dso, dio, dpo):
+    """CCC = DSO + DIO - DPO. Lower is better; negative = suppliers fund you."""
+    if dso is None or dio is None or dpo is None:
+        return None
+    return dso + dio - dpo
+
+@derive("inventory_turnover", ["cost_of_revenue", "inventory"], "efficiency", unit="ratio", higher_better=True)
+def inventory_turnover(cogs, inv):
+    if cogs is None or inv in (None, 0):
+        return None
+    return cogs / inv
+
+@derive("receivables_turnover", ["revenue", "receivables"], "efficiency", unit="ratio", higher_better=True)
+def receivables_turnover(rev, rec):
+    if rev is None or rec in (None, 0):
+        return None
+    return rev / rec
+
+@derive("asset_turnover", ["revenue", "total_assets"], "efficiency", unit="ratio", higher_better=True)
+def asset_turnover(rev, ta):
+    if rev is None or ta in (None, 0):
+        return None
+    return rev / ta
+
+@derive("working_capital", ["current_assets", "current_liabilities"], "efficiency", unit="USD")
+def working_capital(ca, cl):
+    if ca is None or cl is None:
+        return None
+    return ca - cl
