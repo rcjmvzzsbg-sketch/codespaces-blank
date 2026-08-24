@@ -1,62 +1,93 @@
 # pipeline/derive.py
-"""Runs the derivation engine against stored facts.
-Iterates in passes so derived metrics that depend on other
-derived metrics resolve automatically."""
+"""Runs the derivation engine with PERIOD ALIGNMENT — all inputs for a
+given ticker's ratios come from the same fiscal year, preventing
+mismatched-year distortions (e.g. new profit / old revenue)."""
 
-from datetime import datetime
-import metrics  # triggers auto-discovery of metric modules (if any)
+import metrics  # auto-discovery hook
 from core.metrics import DERIVATIONS
 from core.database import get_conn, write_facts
 from config.universe import get_tickers
 
 
-def _get_annual(ticker: str, metric: str):
-    """Latest value for a metric, checking annual first, then point (e.g. price)."""
+def _all_annual(ticker: str) -> dict:
+    """Return {metric: {period: value}} for all annual facts of a ticker."""
+    conn = get_conn()
+    rows = conn.execute(
+        """SELECT metric, period, value FROM facts
+           WHERE ticker=? AND period_type='annual'""",
+        [ticker],
+    ).fetchall()
+    conn.close()
+    data = {}
+    for metric, period, value in rows:
+        data.setdefault(metric, {})[str(period)] = value
+    return data
+
+
+def _point(ticker: str, metric: str):
+    """Latest 'point' value (e.g. price) for a ticker."""
     conn = get_conn()
     row = conn.execute(
-        """SELECT value, period FROM facts
-           WHERE ticker=? AND metric=? AND period_type IN ('annual','point','ttm')
-           ORDER BY period DESC LIMIT 1""",
+        """SELECT value FROM facts WHERE ticker=? AND metric=?
+           AND period_type IN ('point','ttm') ORDER BY period DESC LIMIT 1""",
         [ticker, metric],
     ).fetchone()
     conn.close()
-    return (row[0], row[1]) if row else (None, None)
+    return row[0] if row else None
 
 
-def derive_ticker(ticker: str, max_passes: int = 5) -> int:
-    """Compute all resolvable derivations for one ticker."""
+def derive_ticker(ticker: str, max_passes: int = 6) -> int:
+    annual = _all_annual(ticker)
+
+    # Choose the target fiscal year = latest year where 'revenue' exists.
+    if "revenue" not in annual or not annual["revenue"]:
+        target_year = None
+    else:
+        target_year = max(annual["revenue"].keys())
+
+    def get_input(name):
+        """Prefer the target-year annual value; fall back to point data;
+        else the metric's own latest annual."""
+        if name in annual:
+            if target_year and target_year in annual[name]:
+                return annual[name][target_year], target_year
+            # fall back to that metric's latest annual
+            latest_p = max(annual[name].keys())
+            return annual[name][latest_p], latest_p
+        pv = _point(ticker, name)
+        return (pv, target_year) if pv is not None else (None, None)
+
     written = 0
     for _ in range(max_passes):
         new_this_pass = 0
+        annual = _all_annual(ticker)  # refresh so chained derivations see prior results
         for name, spec in DERIVATIONS.items():
-            # Skip if we already computed this metric
-            existing, _ = _get_annual(ticker, name)
-            if existing is not None:
+            # skip if already computed for the target year
+            if name in annual and target_year and target_year in annual[name]:
                 continue
-            # Gather inputs
-            inputs, latest_period = [], None
+            inputs, periods = [], []
             for inp in spec["inputs"]:
-                val, period = _get_annual(ticker, inp)
+                val, per = get_input(inp)
                 inputs.append(val)
-                if period and (latest_period is None or period > latest_period):
-                    latest_period = period
+                periods.append(per)
             if any(v is None for v in inputs):
-                continue  # inputs not ready yet (maybe next pass)
+                continue
             try:
                 value = spec["fn"](*inputs)
             except Exception:
                 value = None
             if value is None:
                 continue
+            out_period = target_year or next((p for p in periods if p), "2026-01-01")
             write_facts([{
                 "ticker": ticker, "metric": name,
-                "period": latest_period, "period_type": "annual",
+                "period": out_period, "period_type": "annual",
                 "value": value, "unit": spec["unit"], "source": "derived",
             }])
             written += 1
             new_this_pass += 1
         if new_this_pass == 0:
-            break  # nothing new resolved; stop
+            break
     return written
 
 
