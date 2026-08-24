@@ -104,3 +104,68 @@ def print_rankings():
 
 if __name__ == "__main__":
     print_rankings()
+
+
+# --- Macro-aware scoring adjustment ---------------------------------------
+def macro_tilt() -> dict:
+    """Return pillar weight adjustments based on current macro regime.
+    Returns {pillar: multiplier} to nudge the base weights."""
+    from core.macro import regime
+    r = regime()
+    tilt = {"value": 1.0, "quality": 1.0, "growth": 1.0,
+            "momentum": 1.0, "health": 1.0}
+
+    # High rates (10Y > 4.5%) -> balance-sheet health matters more
+    if r.get("ten_year") and r["ten_year"] > 4.5:
+        tilt["health"] *= 1.3
+        tilt["value"] *= 1.15  # expensive money -> value matters
+
+    # Inverted curve -> defensive: reward quality + health, punish momentum
+    if r.get("yield_curve_inverted"):
+        tilt["quality"] *= 1.3
+        tilt["health"] *= 1.3
+        tilt["momentum"] *= 0.7
+
+    # Low VIX (calm, risk-on) -> momentum & growth get a boost
+    if r.get("vix") and r["vix"] < 20:
+        tilt["momentum"] *= 1.2
+        tilt["growth"] *= 1.15
+
+    # High VIX (fear) -> flight to quality
+    if r.get("vix") and r["vix"] > 25:
+        tilt["quality"] *= 1.3
+        tilt["value"] *= 1.2
+
+    return tilt
+
+
+def print_rankings_macro():
+    """Rankings with macro-adjusted weights."""
+    from core.macro import regime
+    r = regime()
+    tilt = macro_tilt()
+
+    # Apply tilt to base weights, then renormalize to sum=1
+    adj = {p: PILLAR_WEIGHTS[p] * tilt[p] for p in PILLAR_WEIGHTS}
+    total = sum(adj.values())
+    adj = {p: w / total for p, w in adj.items()}
+
+    print("\n🌍 MACRO REGIME:")
+    print(f"   10Y: {r['ten_year']}%  |  Curve inverted: {r['yield_curve_inverted']}"
+          f"  |  VIX: {r['vix']}")
+    print(f"\n   Base weights : " + "  ".join(f"{p}={PILLAR_WEIGHTS[p]:.2f}" for p in PILLAR_WEIGHTS))
+    print(f"   Macro-tilted : " + "  ".join(f"{p}={adj[p]:.2f}" for p in adj))
+
+    # Recompute composites with adjusted weights
+    results = compute_scores()  # gives pillar averages per ticker
+    ranked = []
+    for ticker, s in results.items():
+        composite = sum(s[p] * adj[p] for p in PILLAR_WEIGHTS)
+        ranked.append((ticker, composite, s))
+    ranked.sort(key=lambda x: x[1], reverse=True)
+
+    print(f"\n{'RANK':<5}{'TICKER':<8}{'ADJ SCORE':<11}{'VALUE':<8}{'QUALITY':<9}{'GROWTH':<8}{'MOMENTUM':<10}{'HEALTH':<8}")
+    print("=" * 70)
+    for rank, (ticker, comp, s) in enumerate(ranked, 1):
+        print(f"{rank:<5}{ticker:<8}{comp:<11.1f}{s['value']:<8.0f}{s['quality']:<9.0f}"
+              f"{s['growth']:<8.0f}{s['momentum']:<10.0f}{s['health']:<8.0f}")
