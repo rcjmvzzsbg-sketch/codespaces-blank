@@ -1,6 +1,6 @@
 # sources/edgar.py
-"""SEC EDGAR data source — pulls fundamental financials for any company
-via the official XBRL companyfacts API."""
+"""SEC EDGAR data source — pulls ALL annual years of fundamentals
+for any company via the official XBRL companyfacts API."""
 
 import requests
 from core.base_source import BaseSource, register_source
@@ -20,7 +20,9 @@ class EdgarSource(BaseSource):
         resp.raise_for_status()
         return resp.json()
 
-    def _extract_metric(self, facts: dict, tags: list[str], unit: str = "USD"):
+    def _extract_all_years(self, facts: dict, tags: list[str], unit: str = "USD"):
+        """Return {period_end: value} for every full-year (FY) data point,
+        using the first tag that has data."""
         us_gaap = facts.get("facts", {}).get("us-gaap", {})
         for tag in tags:
             node = us_gaap.get(tag)
@@ -30,14 +32,18 @@ class EdgarSource(BaseSource):
             points = units.get(unit) or next(iter(units.values()), None)
             if not points:
                 continue
-            annual = [p for p in points if p.get("fp") == "FY" and "frame" in p]
-            if not annual:
-                annual = [p for p in points if p.get("fp") == "FY"]
-            if not annual:
-                annual = points
-            latest = sorted(annual, key=lambda x: x["end"])[-1]
-            return latest["val"], latest["end"]
-        return None, None
+            # Keep clean full-year figures with a 'frame' (deduped annuals)
+            annual = {}
+            for p in points:
+                if p.get("fp") == "FY" and "frame" in p:
+                    annual[p["end"]] = p["val"]
+            if not annual:  # fallback: any FY point
+                for p in points:
+                    if p.get("fp") == "FY":
+                        annual[p["end"]] = p["val"]
+            if annual:
+                return annual
+        return {}
 
     def fetch(self, ticker: str, cik: str | None = None) -> list[dict]:
         if cik is None:
@@ -45,16 +51,17 @@ class EdgarSource(BaseSource):
             cik = get_cik(ticker)
         if cik is None:
             print(f"[edgar] No CIK found for {ticker}")
-            return []   
+            return []
         try:
             facts = self._get_company_facts(cik)
         except requests.RequestException as e:
             print(f"[edgar] {ticker} (CIK {cik}) request failed: {e}")
             return []
+
         rows = []
         for metric, tags in XBRL_MAP.items():
-            value, period = self._extract_metric(facts, tags)
-            if value is not None:
+            year_map = self._extract_all_years(facts, tags)
+            for period, value in year_map.items():
                 rows.append({
                     "ticker": ticker,
                     "metric": metric,
