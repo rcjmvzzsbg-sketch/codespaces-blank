@@ -191,3 +191,66 @@ def total_liabilities_calc(assets, equity):
     if assets is None or equity is None:
         return None
     return assets - equity
+
+
+# --- Enterprise Value & EV-based valuation --------------------------------
+@derive("enterprise_value", ["market_cap", "total_debt", "cash"], "valuation", unit="USD")
+def enterprise_value(mcap, debt, cash):
+    if mcap is None:
+        return None
+    return mcap + (debt or 0) - (cash or 0)
+
+@derive("ev_ebitda", ["enterprise_value", "ebitda"], "valuation", unit="ratio", higher_better=False)
+def ev_ebitda(ev, ebitda):
+    if ev is None or ebitda in (None, 0):
+        return None
+    return ev / ebitda
+
+@derive("ev_sales", ["enterprise_value", "revenue"], "valuation", unit="ratio", higher_better=False)
+def ev_sales(ev, rev):
+    if ev is None or rev in (None, 0):
+        return None
+    return ev / rev
+
+@derive("ev_fcf", ["enterprise_value", "free_cash_flow"], "valuation", unit="ratio", higher_better=False)
+def ev_fcf(ev, fcf):
+    if ev is None or fcf in (None, 0):
+        return None
+    return ev / fcf
+
+@derive("net_debt", ["total_debt", "cash"], "leverage", unit="USD", higher_better=False)
+def net_debt(debt, cash):
+    if debt is None and cash is None:
+        return None
+    return (debt or 0) - (cash or 0)
+
+@derive("net_debt_to_ebitda", ["net_debt", "ebitda"], "leverage", higher_better=False)
+def net_debt_to_ebitda(nd, ebitda):
+    if nd is None or ebitda in (None, 0):
+        return None
+    return nd / ebitda
+
+# --- Per-share & shareholder yield ----------------------------------------
+@derive("fcf_per_share", ["free_cash_flow", "shares_outstanding"], "value", unit="USD")
+def fcf_per_share(fcf, shares):
+    if fcf is None or shares in (None, 0):
+        return None
+    return fcf / shares
+
+@derive("fcf_yield", ["free_cash_flow", "market_cap"], "value", unit="pct")
+def fcf_yield(fcf, mcap):
+    if fcf is None or mcap in (None, 0):
+        return None
+    return fcf / mcap * 100
+
+@derive("shareholder_yield", ["dividends_paid", "stock_buybacks", "market_cap"], "value", unit="pct")
+def shareholder_yield(div, bb, mcap):
+    if mcap in (None, 0):
+        return None
+    return ((div or 0) + (bb or 0)) / mcap * 100
+
+@derive("cash_conversion", ["free_cash_flow", "net_income"], "quality", unit="pct")
+def cash_conversion(fcf, ni):
+    if fcf is None or ni in (None, 0):
+        return None
+    return fcf / ni * 100

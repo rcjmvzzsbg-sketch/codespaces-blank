@@ -11,6 +11,10 @@ SCORING_METRICS = {
     "pe_ratio":            ("value", False),
     "pb_ratio":            ("value", False),
     "ev_ebitda":           ("value", False),
+    "fcf_yield":           ("value", True),
+    "sharpe_ratio":        ("momentum", True),
+
+    "ev_ebitda":           ("value", False),
     # Quality (higher is better)
     "roe":                 ("quality", True),
     "piotroski_f":         ("quality", True),
