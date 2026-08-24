@@ -80,3 +80,21 @@ def free_cash_flow(ocf, capex):
     if ocf is None or capex is None:
         return None
     return ocf - capex
+
+
+# --- Price-based intermediates (need Stooq/yfinance price + EDGAR shares) --
+@derive("market_cap", ["price", "shares_outstanding"], "valuation", unit="USD")
+def market_cap(price, shares):
+    if price is None or shares is None:
+        return None
+    return price * shares
+
+@derive("book_value_per_share", ["shareholder_equity", "shares_outstanding"], "valuation", unit="USD")
+def book_value_per_share(equity, shares):
+    if equity is None or shares in (None, 0):
+        return None
+    return equity / shares
+
+@derive("eps_ttm", ["eps_diluted"], "valuation", unit="USD")
+def eps_ttm(eps_diluted):
+    return eps_diluted  # using latest annual diluted EPS as a stand-in for now

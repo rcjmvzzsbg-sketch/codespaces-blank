@@ -11,11 +11,11 @@ from config.universe import get_tickers
 
 
 def _get_annual(ticker: str, metric: str):
-    """Latest annual value for a metric (raw or previously derived)."""
+    """Latest value for a metric, checking annual first, then point (e.g. price)."""
     conn = get_conn()
     row = conn.execute(
         """SELECT value, period FROM facts
-           WHERE ticker=? AND metric=? AND period_type='annual'
+           WHERE ticker=? AND metric=? AND period_type IN ('annual','point','ttm')
            ORDER BY period DESC LIMIT 1""",
         [ticker, metric],
     ).fetchone()
