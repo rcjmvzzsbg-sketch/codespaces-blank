@@ -182,3 +182,12 @@ def gross_margin(rev, cogs):
     if rev in (None, 0) or cogs is None:
         return None
     return (rev - cogs) / rev * 100
+
+
+# --- Fallback: total_liabilities = assets - equity (for firms that don't
+#     file the plain 'Liabilities' tag, e.g. Amazon) ---------------------
+@derive("total_liabilities_calc", ["total_assets", "shareholder_equity"], "intermediate", unit="USD")
+def total_liabilities_calc(assets, equity):
+    if assets is None or equity is None:
+        return None
+    return assets - equity

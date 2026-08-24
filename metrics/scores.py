@@ -92,7 +92,7 @@ def altman_z(ticker, d):
     cl = latest("current_liabilities") or 0
     re = latest("retained_earnings") or 0
     ebit = latest("operating_income") or 0   # EBIT ~ operating income
-    tl = latest("total_liabilities")
+    tl = latest("total_liabilities") or latest("total_liabilities_calc")
     rev = latest("revenue") or 0
 
     # market cap: latest 'point' fact
