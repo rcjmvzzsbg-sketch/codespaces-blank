@@ -1,12 +1,16 @@
 # sources/edgar.py
-"""SEC EDGAR data source — pulls ALL annual years of fundamentals
-for any company via the official XBRL companyfacts API."""
+"""SEC EDGAR — pulls ONLY true annual (full fiscal year) fundamentals."""
 
+import re
 import requests
 from core.base_source import BaseSource, register_source
 from mappings.xbrl_tags import XBRL_MAP
 
 HEADERS = {"User-Agent": "Stock Screener rcjmvzzsbg@example.com"}
+
+# Full-year duration frames: "CY2023"  |  Year-end instant frames: "CY2023Q4I"
+_ANNUAL_FRAME = re.compile(r"^CY\d{4}$")
+_YEAREND_FRAME = re.compile(r"^CY\d{4}Q4I$")
 
 
 @register_source
@@ -21,7 +25,7 @@ class EdgarSource(BaseSource):
         return resp.json()
 
     def _extract_all_years(self, facts: dict, tags: list[str], unit: str = "USD"):
-        """Return {period_end: value} for every full-year (FY) data point,
+        """Return {period_end: value} for TRUE annual data points only,
         using the first tag that has data."""
         us_gaap = facts.get("facts", {}).get("us-gaap", {})
         for tag in tags:
@@ -32,15 +36,12 @@ class EdgarSource(BaseSource):
             points = units.get(unit) or next(iter(units.values()), None)
             if not points:
                 continue
-            # Keep clean full-year figures with a 'frame' (deduped annuals)
             annual = {}
             for p in points:
-                if p.get("fp") == "FY" and "frame" in p:
+                frame = p.get("frame", "")
+                # Keep only full-year durations OR year-end instants
+                if _ANNUAL_FRAME.match(frame) or _YEAREND_FRAME.match(frame):
                     annual[p["end"]] = p["val"]
-            if not annual:  # fallback: any FY point
-                for p in points:
-                    if p.get("fp") == "FY":
-                        annual[p["end"]] = p["val"]
             if annual:
                 return annual
         return {}
@@ -55,20 +56,15 @@ class EdgarSource(BaseSource):
         try:
             facts = self._get_company_facts(cik)
         except requests.RequestException as e:
-            print(f"[edgar] {ticker} (CIK {cik}) request failed: {e}")
+            print(f"[edgar] {ticker} request failed: {e}")
             return []
 
         rows = []
         for metric, tags in XBRL_MAP.items():
-            year_map = self._extract_all_years(facts, tags)
-            for period, value in year_map.items():
+            for period, value in self._extract_all_years(facts, tags).items():
                 rows.append({
-                    "ticker": ticker,
-                    "metric": metric,
-                    "period": period,
-                    "period_type": "annual",
-                    "value": value,
-                    "unit": "USD",
-                    "source": "edgar",
+                    "ticker": ticker, "metric": metric,
+                    "period": period, "period_type": "annual",
+                    "value": value, "unit": "USD", "source": "edgar",
                 })
         return rows
