@@ -1,33 +1,41 @@
 # metrics/ttm.py
-"""Trailing-Twelve-Month metrics: sum last 4 quarters for flow items,
-use latest quarter for balance-sheet items, compute fresh TTM ratios.
-Runs ALONGSIDE annual metrics so you can compare fiscal-year vs TTM."""
+"""Trailing-Twelve-Month metrics, ANCHORED TO THE ANNUAL figure to correctly
+handle the missing fiscal-Q4 (companies embed Q4 in the 10-K, not a 10-Q).
+
+TTM_flow = latest_annual + (quarters after FY-end) - (same quarters prior year)
+The missing Q4 is already inside the annual, so we never need it."""
 
 from core.database import get_conn, write_facts
 from config.universe import get_tickers
 
-# Flow metrics: accumulate over time -> SUM trailing 4 quarters
 FLOW = [
     "revenue", "net_income", "gross_profit", "operating_income",
     "operating_cash_flow", "capex", "cost_of_revenue",
     "rd_expense", "interest_expense", "income_tax", "pretax_income",
 ]
-# Stock metrics: point-in-time -> use MOST RECENT quarter
 STOCK = [
     "total_assets", "shareholder_equity", "total_debt", "cash",
     "current_assets", "current_liabilities", "shares_outstanding",
 ]
 
 
+def _annual_latest(ticker, metric):
+    conn = get_conn()
+    r = conn.execute(
+        """SELECT period, value FROM facts WHERE ticker=? AND metric=?
+           AND period_type='annual' ORDER BY period DESC LIMIT 1""",
+        [ticker, metric]).fetchone()
+    conn.close()
+    return (str(r[0]), r[1]) if r else (None, None)
+
+
 def _quarters(ticker, metric):
-    """Sorted [(period, value)] of quarterly facts, oldest->newest."""
     conn = get_conn()
     rows = conn.execute(
-        """SELECT period, value FROM facts
-           WHERE ticker=? AND metric=? AND period_type='quarterly'
-           ORDER BY period""", [ticker, metric]).fetchall()
+        """SELECT period, value FROM facts WHERE ticker=? AND metric=?
+           AND period_type='quarterly' ORDER BY period""", [ticker, metric]).fetchall()
     conn.close()
-    return [(str(p), v) for p, v in rows]
+    return [(str(p), v) for p, v in rows if v is not None]
 
 
 def _point(ticker, metric):
@@ -40,37 +48,61 @@ def _point(ticker, metric):
     return r[0] if r else None
 
 
+def _ttm_flow(ticker, metric):
+    """Annual-anchored TTM for a flow metric. Returns (value, period) or (None, None)."""
+    a_period, a_value = _annual_latest(ticker, metric)
+    if a_value is None:
+        return None, None
+    qs = _quarters(ticker, metric)
+    if not qs:
+        return a_value, a_period  # only annual available -> use it
+
+    # Quarters strictly AFTER the fiscal year-end = the "new" ones.
+    new_q = [(p, v) for p, v in qs if p > a_period]
+    if not new_q:
+        return a_value, a_period  # annual IS the freshest 12 months
+
+    k = len(new_q)
+    # The k quarters ending on/before FY-end, one year earlier = "old" ones.
+    prior = [(p, v) for p, v in qs if p <= a_period]
+    if len(prior) < k:
+        return None, None  # not enough history to net out cleanly
+    old_q = prior[-k:]
+
+    ttm = a_value + sum(v for _, v in new_q) - sum(v for _, v in old_q)
+    latest_period = new_q[-1][0]
+    return ttm, latest_period
+
+
 def compute_ttm(ticker):
     facts = []
+    vals = {}
     latest_period = None
-    ttm_vals = {}
 
-    # --- Flow metrics: sum trailing 4 quarters ---
     for metric in FLOW:
-        qs = _quarters(ticker, metric)
-        if len(qs) < 4:
+        ttm, period = _ttm_flow(ticker, metric)
+        if ttm is None:
             continue
-        last4 = qs[-4:]
-        total = sum(v for _, v in last4 if v is not None)
-        if len([v for _, v in last4 if v is not None]) < 4:
-            continue  # need all 4 quarters for a clean TTM
-        ttm_vals[metric] = total
-        latest_period = last4[-1][0]
+        vals[metric] = ttm
+        latest_period = period or latest_period
         facts.append({
-            "ticker": ticker, "metric": f"{metric}_ttm", "period": last4[-1][0],
-            "period_type": "ttm", "value": total, "unit": "USD", "source": "ttm",
+            "ticker": ticker, "metric": f"{metric}_ttm", "period": period,
+            "period_type": "ttm", "value": ttm, "unit": "USD", "source": "ttm",
         })
 
-    # --- Stock metrics: most recent quarter ---
+    # Balance-sheet: most recent quarter (or annual fallback)
     for metric in STOCK:
         qs = _quarters(ticker, metric)
         if qs:
-            ttm_vals[metric] = qs[-1][1]
+            vals[metric] = qs[-1][1]
+        else:
+            _, av = _annual_latest(ticker, metric)
+            if av is not None:
+                vals[metric] = av
 
     if not latest_period:
-        return facts  # not enough quarterly data
+        return facts
 
-    # --- Fresh TTM ratios ---
     def add(name, value, unit="pct"):
         if value is not None:
             facts.append({
@@ -79,15 +111,11 @@ def compute_ttm(ticker):
                 "unit": unit, "source": "ttm",
             })
 
-    rev = ttm_vals.get("revenue")
-    ni = ttm_vals.get("net_income")
-    gp = ttm_vals.get("gross_profit")
-    oi = ttm_vals.get("operating_income")
-    ocf = ttm_vals.get("operating_cash_flow")
-    capex = ttm_vals.get("capex")
-    shares = ttm_vals.get("shares_outstanding")
-    equity = ttm_vals.get("shareholder_equity")
-    assets = ttm_vals.get("total_assets")
+    rev = vals.get("revenue"); ni = vals.get("net_income")
+    gp = vals.get("gross_profit"); oi = vals.get("operating_income")
+    ocf = vals.get("operating_cash_flow"); capex = vals.get("capex")
+    equity = vals.get("shareholder_equity"); assets = vals.get("total_assets")
+    shares = vals.get("shares_outstanding")
 
     if rev:
         if ni is not None: add("net_margin_ttm", ni / rev * 100)
@@ -96,19 +124,16 @@ def compute_ttm(ticker):
     if ni and equity: add("roe_ttm", ni / equity * 100)
     if ni and assets: add("roa_ttm", ni / assets * 100)
 
-    # TTM free cash flow + margin
     if ocf is not None and capex is not None:
-        fcf_ttm = ocf - abs(capex)
-        add("free_cash_flow_ttm", fcf_ttm, "USD")
-        if rev: add("fcf_margin_ttm", fcf_ttm / rev * 100)
+        fcf = ocf - abs(capex)
+        add("free_cash_flow_ttm", fcf, "USD")
+        if rev: add("fcf_margin_ttm", fcf / rev * 100)
 
-    # TTM EPS + P/E (needs price)
-    price = _point(ticker, "price")
-    if ni and shares:
-        eps = ni / shares
-        add("eps_ttm_actual", eps, "USD")
-        if price and eps > 0:
-            add("pe_ttm", price / eps, "ratio")
+    # P/E via market_cap (dodges the missing quarterly-shares problem)
+    mcap = _point(ticker, "market_cap")
+    if ni and ni > 0:
+        if mcap: add("pe_ttm", mcap / ni, "ratio")
+        if shares: add("eps_ttm_actual", ni / shares, "USD")
 
     return facts
 
