@@ -138,7 +138,14 @@ def compute_ttm(ticker):
     return facts
 
 
+def _purge_ttm():
+    conn = get_conn()
+    conn.execute("DELETE FROM facts WHERE source='ttm'")
+    conn.close()
+
+
 def compute_all():
+    _purge_ttm()  # clear stale TTM rows so periods don't duplicate
     total = 0
     for ticker in get_tickers():
         facts = compute_ttm(ticker)
