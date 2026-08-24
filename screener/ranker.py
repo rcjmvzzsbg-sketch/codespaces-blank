@@ -13,6 +13,9 @@ SCORING_METRICS = {
     "ev_ebitda":           ("value", False),
     # Quality (higher is better)
     "roe":                 ("quality", True),
+    "piotroski_f":         ("quality", True),
+    "altman_z":            ("health", True),
+
     "net_margin":          ("quality", True),
     "gross_margin":        ("quality", True),
     # Growth (higher is better)
