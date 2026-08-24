@@ -22,6 +22,7 @@ SCORING_METRICS = {
     "revenue_growth_yoy":  ("growth", True),
     # Momentum (higher is better)
     "rsi_14":              ("momentum", True),
+    "insider_sentiment":   ("momentum", True),
     "price_vs_sma200":     ("momentum", True),
     "roc_60":              ("momentum", True),
     # Health
