@@ -70,7 +70,7 @@ def derive_ticker(ticker: str, max_passes: int = 6) -> int:
                 val, per = get_input(inp)
                 inputs.append(val)
                 periods.append(per)
-            if any(v is None for v in inputs):
+            if all(v is None for v in inputs):
                 continue
             try:
                 value = spec["fn"](*inputs)

@@ -55,3 +55,8 @@ XBRL_MAP = {
     "stock_buybacks": ["PaymentsForRepurchaseOfCommonStock"],
     "stock_based_comp": ["ShareBasedCompensation"],
 }
+
+# --- Separate depreciation/amortization (MSFT, GOOGL report these split) ---
+XBRL_MAP["depreciation"] = ["Depreciation"]
+XBRL_MAP["amortization"] = ["AmortizationOfIntangibleAssets"]
+XBRL_MAP["depreciation_amortization"].append("DepreciationAndAmortization")

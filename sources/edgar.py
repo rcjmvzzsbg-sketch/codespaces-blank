@@ -1,5 +1,6 @@
 # sources/edgar.py
-"""SEC EDGAR — pulls ONLY true annual (full fiscal year) fundamentals."""
+"""SEC EDGAR — merges ALL candidate tags for full multi-year coverage,
+solving the 'company switched XBRL concept between years' problem."""
 
 import re
 import requests
@@ -7,8 +8,6 @@ from core.base_source import BaseSource, register_source
 from mappings.xbrl_tags import XBRL_MAP
 
 HEADERS = {"User-Agent": "Stock Screener rcjmvzzsbg@example.com"}
-
-# Full-year duration frames: "CY2023"  |  Year-end instant frames: "CY2023Q4I"
 _ANNUAL_FRAME = re.compile(r"^CY\d{4}$")
 _YEAREND_FRAME = re.compile(r"^CY\d{4}Q4I$")
 
@@ -25,10 +24,12 @@ class EdgarSource(BaseSource):
         return resp.json()
 
     def _extract_all_years(self, facts: dict, tags: list[str], unit: str = "USD"):
-        """Return {period_end: value} for TRUE annual data points only,
-        using the first tag that has data."""
+        """MERGE annual data across all candidate tags for full coverage.
+        Priority tag (first in list) wins on conflicts; later tags fill gaps."""
         us_gaap = facts.get("facts", {}).get("us-gaap", {})
-        for tag in tags:
+        merged = {}  # {period_end: value}
+        # Iterate in REVERSE so priority (first) tag overwrites last -> wins.
+        for tag in reversed(tags):
             node = us_gaap.get(tag)
             if not node:
                 continue
@@ -36,15 +37,11 @@ class EdgarSource(BaseSource):
             points = units.get(unit) or next(iter(units.values()), None)
             if not points:
                 continue
-            annual = {}
             for p in points:
                 frame = p.get("frame", "")
-                # Keep only full-year durations OR year-end instants
                 if _ANNUAL_FRAME.match(frame) or _YEAREND_FRAME.match(frame):
-                    annual[p["end"]] = p["val"]
-            if annual:
-                return annual
-        return {}
+                    merged[p["end"]] = p["val"]
+        return merged
 
     def fetch(self, ticker: str, cik: str | None = None) -> list[dict]:
         if cik is None:

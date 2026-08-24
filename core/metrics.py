@@ -161,3 +161,24 @@ def ebitda(oi, da):
     if oi is None:
         return None
     return oi + (da or 0)
+
+
+# --- OVERRIDES: robust EBITDA (handles split D&A) + gross margin (computed) -
+@derive("ebitda", ["operating_income", "depreciation_amortization", "depreciation", "amortization"], "intermediate", unit="USD")
+def ebitda(oi, da, dep, amort):
+    if oi is None:
+        return None
+    if da is not None:            # combined tag exists (AAPL/AMZN/NVDA)
+        return oi + da
+    dep = dep or 0
+    amort = amort or 0
+    if dep == 0 and amort == 0:   # no D&A data at all
+        return None
+    return oi + dep + amort       # split tags (MSFT/GOOGL)
+
+@derive("gross_margin", ["revenue", "cost_of_revenue"], "quality", unit="pct")
+def gross_margin(rev, cogs):
+    """Compute from revenue - COGS (reliable) instead of trusting GrossProfit tag."""
+    if rev in (None, 0) or cogs is None:
+        return None
+    return (rev - cogs) / rev * 100
