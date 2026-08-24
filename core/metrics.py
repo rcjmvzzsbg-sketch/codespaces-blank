@@ -68,3 +68,15 @@ def current_ratio(ca, cl):
 @derive("interest_coverage", ["ebit", "interest_expense"], "leverage")
 def interest_coverage(ebit, interest):
     return _safe_div(ebit, interest)
+
+
+# --- Intermediates (derived from raw, feed other derivations) -------------
+@derive("ebit", ["operating_income"], "intermediate", unit="USD")
+def ebit(operating_income):
+    return operating_income  # operating income ≈ EBIT for most companies
+
+@derive("free_cash_flow", ["operating_cash_flow", "capex"], "intermediate", unit="USD")
+def free_cash_flow(ocf, capex):
+    if ocf is None or capex is None:
+        return None
+    return ocf - capex
