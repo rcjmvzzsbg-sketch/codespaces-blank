@@ -1,0 +1,31 @@
+{
+  "ticker": "MICC",
+  "metrics": {
+    "short_interest": 12.4,
+    "insider_buy_count": 0.0,
+    "insider_sell_count": 0.0,
+    "insider_net_shares": 0.0,
+    "insider_buy_value": 0.0,
+    "insider_sell_value": 0.0,
+    "insider_sentiment": 50.0,
+    "price": 20.290000915527344,
+    "volatility_annual": 45.161,
+    "annual_return": 54.532,
+    "sharpe_ratio": 1.119,
+    "sortino_ratio": 1.438,
+    "max_drawdown": -34.273,
+    "return_1m": 9.676,
+    "beta": 0.404,
+    "value_score": 50.0,
+    "quality_score": 50.0,
+    "momentum_score": 89.1,
+    "health_score": 50.0,
+    "stochastic_k": 87.6924,
+    "stochastic_d": 86.6358,
+    "williams_r": -12.3076,
+    "obv": 19001392.0,
+    "cci_20": 132.5392,
+    "mfi_14": 67.4119,
+    "adx_14": 36.4212
+  }
+}

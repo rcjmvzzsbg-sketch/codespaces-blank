@@ -1,0 +1,31 @@
+{
+  "ticker": "SCRNY",
+  "metrics": {
+    "short_interest": 12.4,
+    "insider_buy_count": 0.0,
+    "insider_sell_count": 0.0,
+    "insider_net_shares": 0.0,
+    "insider_buy_value": 0.0,
+    "insider_sell_value": 0.0,
+    "insider_sentiment": 50.0,
+    "price": 16.489999771118164,
+    "volatility_annual": 84.571,
+    "annual_return": 98.583,
+    "sharpe_ratio": 1.118,
+    "sortino_ratio": 0.962,
+    "max_drawdown": -29.696,
+    "return_1m": -20.492,
+    "beta": -0.531,
+    "value_score": 50.0,
+    "quality_score": 50.0,
+    "momentum_score": 93.2,
+    "health_score": 50.0,
+    "stochastic_k": 23.5294,
+    "stochastic_d": 14.1923,
+    "williams_r": -76.4706,
+    "obv": 3039.0,
+    "cci_20": -36.9707,
+    "mfi_14": 68.8306,
+    "adx_14": 68.7334
+  }
+}

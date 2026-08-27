@@ -1,0 +1,1676 @@
+nohup: ignoring input
+🚀 Batch ingest: 940 tickers, 6 sources
+   Sources: ['edgar', 'finra', 'fred', 'insider', 'prices', 'wikidata']
+   Resuming: 393 done, 547 remaining
+
+  [prices] FLEX: 1254 bars via yfinance
+  [wikidata] FLEX: Technology / Electronic Components
+  [394/940] ✓ FLEX    2258 facts  (28.7s)
+  [prices] KGC: 1254 bars via yfinance
+  [wikidata] KGC: Basic Materials / Gold
+  [395/940] ✓ KGC        8 facts  (9.4s)
+  [prices] HSY: 1254 bars via yfinance
+  [wikidata] HSY: Consumer Defensive / Confectioners
+  [396/940] ✓ HSY     2083 facts  (28.0s)
+  [prices] ADM: 1254 bars via yfinance
+  [wikidata] ADM: Consumer Defensive / Farm Products
+  [397/940] ✓ ADM     1990 facts  (27.2s)
+  [prices] HIG: 1254 bars via yfinance
+  [wikidata] HIG: Financial Services / Insurance - Diversified
+  [398/940] ✓ HIG     1478 facts  (23.3s)
+  [prices] KVUE: 830 bars via yfinance
+  [wikidata] KVUE: Consumer Defensive / Household & Personal Products
+  [399/940] ✓ KVUE     604 facts  (13.8s)
+  [prices] CLS: 1254 bars via yfinance
+  [wikidata] CLS: Technology / Electronic Components
+  [400/940] ✓ CLS      327 facts  (15.4s)
+  [prices] KMB: 1254 bars via yfinance
+  [wikidata] KMB: Consumer Defensive / Household & Personal Products
+  [401/940] ✓ KMB     1621 facts  (23.8s)
+  [prices] VOD: 1254 bars via yfinance
+  [wikidata] VOD: Communication Services / Telecom Services
+  [402/940] ✓ VOD        8 facts  (7.9s)
+  [prices] UAL: 1254 bars via yfinance
+  [wikidata] UAL: Industrials / Airlines
+  [403/940] ✓ UAL     1708 facts  (25.7s)
+  [prices] NTAP: 1254 bars via yfinance
+  [wikidata] NTAP: Technology / Software - Infrastructure
+  [404/940] ✓ NTAP    2280 facts  (23.4s)
+  [prices] PEG: 1254 bars via yfinance
+  [wikidata] PEG: Utilities / Utilities - Regulated Electric
+  [405/940] ✓ PEG     1819 facts  (25.2s)
+  [prices] IRM: 1254 bars via yfinance
+  [wikidata] IRM: Real Estate / REIT - Specialty
+  [406/940] ✓ IRM     1963 facts  (28.9s)
+  [prices] VG: 398 bars via yfinance
+  [wikidata] VG: Energy / Oil & Gas Midstream
+  [407/940] ✓ VG       249 facts  (9.4s)
+  [prices] VMC: 1254 bars via yfinance
+  [wikidata] VMC: Basic Materials / Building Materials
+  [408/940] ✓ VMC     2175 facts  (27.5s)
+  [prices] EC: 1254 bars via yfinance
+  [wikidata] EC: Energy / Oil & Gas Integrated
+  [409/940] ✓ EC        11 facts  (8.2s)
+  [prices] ALC: 1254 bars via yfinance
+  [wikidata] ALC: Healthcare / Medical Instruments & Supplies
+  [410/940] ✓ ALC      314 facts  (10.5s)
+  [prices] NTR: 1254 bars via yfinance
+  [wikidata] NTR: Basic Materials / Agricultural Inputs
+  [411/940] ✓ NTR        8 facts  (8.1s)
+  [prices] PUK: 1254 bars via yfinance
+  [wikidata] PUK: Financial Services / Insurance - Life
+  [412/940] ✓ PUK        8 facts  (7.9s)
+  [prices] SHG: 1254 bars via yfinance
+  [wikidata] SHG: Financial Services / Banks - Regional
+  [413/940] ✓ SHG       63 facts  (8.8s)
+  [prices] CCL: 1254 bars via yfinance
+  [wikidata] CCL: Consumer Cyclical / Travel Services
+  [414/940] ✓ CCL     1947 facts  (20.3s)
+  [prices] WEC: 1254 bars via yfinance
+  [wikidata] WEC: Utilities / Utilities - Regulated Electric
+  [415/940] ✓ WEC     1693 facts  (22.3s)
+  [prices] MTB: 1254 bars via yfinance
+  [wikidata] MTB: Financial Services / Banks - Regional
+  [416/940] ✓ MTB     1373 facts  (23.3s)
+  [prices] ACGL: 1254 bars via yfinance
+  [wikidata] ACGL: Financial Services / Insurance - Diversified
+  [417/940] ✓ ACGL    1096 facts  (19.8s)
+  [prices] TECK: 1254 bars via yfinance
+  [wikidata] TECK: Basic Materials / Copper
+  [418/940] ✓ TECK       8 facts  (8.0s)
+  [prices] HBAN: 1254 bars via yfinance
+  [wikidata] HBAN: Financial Services / Banks - Regional
+  [419/940] ✓ HBAN    1447 facts  (23.7s)
+  [prices] DXCM: 1254 bars via yfinance
+  [wikidata] DXCM: Healthcare / Medical Devices
+  [420/940] ✓ DXCM    1940 facts  (27.5s)
+  [prices] BBD: 1254 bars via yfinance
+  [wikidata] BBD: Financial Services / Banks - Regional
+  [421/940] ✓ BBD       88 facts  (9.9s)
+  [prices] ESLT: 1254 bars via yfinance
+  [wikidata] ESLT: Industrials / Aerospace & Defense
+  [422/940] ✓ ESLT     609 facts  (13.6s)
+  [prices] TWLO: 1254 bars via yfinance
+  [wikidata] TWLO: Technology / Software - Infrastructure
+  [423/940] ✓ TWLO    1301 facts  (22.7s)
+  [prices] NTRS: 1254 bars via yfinance
+  [wikidata] NTRS: Financial Services / Asset Management
+  [424/940] ✓ NTRS    1339 facts  (23.3s)
+  [prices] FRFHF: 1254 bars via yfinance
+  [wikidata] FRFHF: Financial Services / Insurance - Property & Casualty
+  [425/940] ✓ FRFHF      8 facts  (8.2s)
+  [prices] RJF: 1254 bars via yfinance
+  [wikidata] RJF: Financial Services / Asset Management
+  [426/940] ✓ RJF     1312 facts  (18.8s)
+  [prices] EME: 1254 bars via yfinance
+  [wikidata] EME: Industrials / Engineering & Construction
+  [427/940] ✓ EME     1938 facts  (27.3s)
+  [prices] ILMN: 1254 bars via yfinance
+  [wikidata] ILMN: Healthcare / Diagnostics & Research
+  [428/940] ✓ ILMN    2190 facts  (24.4s)
+  [prices] EQT: 1254 bars via yfinance
+  [wikidata] EQT: Energy / Oil & Gas E&P
+  [429/940] ✓ EQT     1888 facts  (27.4s)
+  [prices] RMD: 1254 bars via yfinance
+  [wikidata] RMD: Healthcare / Medical Instruments & Supplies
+  [430/940] ✓ RMD     2228 facts  (26.8s)
+  [prices] GEHC: 925 bars via yfinance
+  [wikidata] GEHC: Healthcare / Medical Devices
+  [431/940] ✓ GEHC     493 facts  (13.5s)
+  [prices] CHT: 1254 bars via yfinance
+  [wikidata] CHT: Communication Services / Telecom Services
+  [432/940] ✓ CHT        8 facts  (8.0s)
+  [prices] UI: 1254 bars via yfinance
+  [wikidata] UI: Technology / Communication Equipment
+  [433/940] ✓ UI      2109 facts  (25.0s)
+[edgar] RSHGY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001447391.json
+  [prices] RSHGY: 302 bars via yfinance
+  [wikidata] RSHGY: Financial Services / Banks - Regional
+  [434/940] ✓ RSHGY      8 facts  (3.2s)
+  [prices] ERIC: 1254 bars via yfinance
+  [wikidata] ERIC: Technology / Communication Equipment
+  [435/940] ✓ ERIC       8 facts  (8.2s)
+  [prices] CQP: 1254 bars via yfinance
+  [wikidata] CQP: Energy / Oil & Gas Midstream
+  [436/940] ✓ CQP     1364 facts  (20.7s)
+[edgar] CKHGF request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001469059.json
+  [prices] CKHGF: 1253 bars via yfinance
+  [wikidata] CKHGF: Financial Services / Banks - Regional
+  [437/940] ✓ CKHGF      8 facts  (8.7s)
+  [prices] STLD: 1254 bars via yfinance
+  [wikidata] STLD: Basic Materials / Steel
+  [438/940] ✓ STLD    2476 facts  (32.6s)
+[edgar] DLMAY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0002073893.json
+  [prices] DLMAY: 229 bars via yfinance
+  [wikidata] DLMAY: Consumer Defensive / Discount Stores
+  [439/940] ✓ DLMAY      8 facts  (2.7s)
+  [prices] WTW: 1254 bars via yfinance
+  [wikidata] WTW: Financial Services / Insurance Brokers
+  [440/940] ✓ WTW     1859 facts  (26.1s)
+  [prices] CCI: 1254 bars via yfinance
+  [wikidata] CCI: Real Estate / REIT - Specialty
+  [441/940] ✓ CCI     1987 facts  (26.1s)
+  [prices] CNC: 1254 bars via yfinance
+  [wikidata] CNC: Healthcare / Healthcare Plans
+  [442/940] ✓ CNC     2001 facts  (27.4s)
+  [prices] MDB: 1254 bars via yfinance
+  [wikidata] MDB: Technology / Software - Infrastructure
+  [443/940] ✓ MDB     1107 facts  (18.0s)
+  [prices] BIIB: 1254 bars via yfinance
+  [wikidata] BIIB: Healthcare / Drug Manufacturers - General
+  [444/940] ✓ BIIB    2217 facts  (26.7s)
+  [prices] CBOE: 1254 bars via yfinance
+  [wikidata] CBOE: Financial Services / Financial Data & Stock Exchanges
+  [445/940] ✓ CBOE    1975 facts  (26.1s)
+  [prices] MLM: 1254 bars via yfinance
+  [wikidata] MLM: Basic Materials / Building Materials
+  [446/940] ✓ MLM     2088 facts  (27.0s)
+  [prices] JBL: 1254 bars via yfinance
+  [wikidata] JBL: Technology / Electronic Components
+  [447/940] ✓ JBL     2044 facts  (21.4s)
+  [prices] ZTS: 1254 bars via yfinance
+  [wikidata] ZTS: Healthcare / Drug Manufacturers - Specialty & Generic
+  [448/940] ✓ ZTS     1785 facts  (17.5s)
+  [prices] CASY: 1254 bars via yfinance
+  [wikidata] CASY: Consumer Cyclical / Specialty Retail
+  [449/940] ✓ CASY    1718 facts  (20.6s)
+  [prices] ALNY: 1254 bars via yfinance
+  [wikidata] ALNY: Healthcare / Biotechnology
+  [450/940] ✓ ALNY    1601 facts  (23.8s)
+  [prices] ARES: 1254 bars via yfinance
+  [wikidata] ARES: Financial Services / Asset Management
+  [451/940] ✓ ARES     744 facts  (16.0s)
+[edgar] UNVGY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001890126.json
+  [prices] UNVGY: 508 bars via yfinance
+  [wikidata] UNVGY: Communication Services / Entertainment
+  [452/940] ✓ UNVGY      8 facts  (4.3s)
+  [prices] SUNB: 123 bars via yfinance
+  [wikidata] SUNB: Industrials / Rental & Leasing Services
+  [453/940] ✓ SUNB     142 facts  (7.8s)
+  [prices] IR: 1254 bars via yfinance
+  [wikidata] IR: Industrials / Specialty Industrial Machinery
+  [454/940] ✓ IR      1179 facts  (20.7s)
+  [prices] EXR: 1254 bars via yfinance
+  [wikidata] EXR: Real Estate / REIT - Industrial
+  [455/940] ✓ EXR     1362 facts  (22.0s)
+  [prices] CPRT: 1254 bars via yfinance
+  [wikidata] CPRT: Industrials / Specialty Business Services
+  [456/940] ✓ CPRT    1877 facts  (20.1s)
+  [prices] ZM: 1254 bars via yfinance
+  [wikidata] ZM: Technology / Software - Application
+  [457/940] ✓ ZM       939 facts  (14.6s)
+  [prices] MDLN: 172 bars via yfinance
+  [wikidata] MDLN: Healthcare / Medical Instruments & Supplies
+  [458/940] ✓ MDLN     183 facts  (9.4s)
+  [prices] KHC: 1254 bars via yfinance
+  [wikidata] KHC: Consumer Defensive / Packaged Foods
+  [459/940] ✓ KHC     1450 facts  (19.3s)
+  [prices] LVS: 1254 bars via yfinance
+  [wikidata] LVS: Consumer Cyclical / Resorts & Casinos
+  [460/940] ✓ LVS     1982 facts  (25.7s)
+[edgar] FSNUY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0000904868.json
+  [prices] FSNUY: 1254 bars via yfinance
+  [wikidata] FSNUY: Healthcare / Medical Care Facilities
+  [461/940] ✓ FSNUY      8 facts  (8.2s)
+  [prices] BAP: 1254 bars via yfinance
+  [wikidata] BAP: Financial Services / Banks - Regional
+  [462/940] ✓ BAP        8 facts  (8.5s)
+  [prices] FTI: 1254 bars via yfinance
+  [wikidata] FTI: Energy / Oil & Gas Equipment & Services
+  [463/940] ✓ FTI     1248 facts  (20.2s)
+  [prices] AEE: 1254 bars via yfinance
+  [wikidata] AEE: Utilities / Utilities - Regulated Electric
+  [464/940] ✓ AEE     1818 facts  (24.2s)
+  [prices] CFG: 1254 bars via yfinance
+  [wikidata] CFG: Financial Services / Banks - Regional
+  [465/940] ✓ CFG     1032 facts  (23.4s)
+  [prices] CPNG: 1254 bars via yfinance
+  [wikidata] CPNG: Consumer Cyclical / Internet Retail
+  [466/940] ✓ CPNG     722 facts  (15.6s)
+  [prices] VICI: 1254 bars via yfinance
+  [wikidata] VICI: Real Estate / REIT - Diversified
+  [467/940] ✓ VICI     799 facts  (17.1s)
+  [prices] RDDT: 609 bars via yfinance
+  [wikidata] RDDT: Communication Services / Internet Content & Information
+  [468/940] ✓ RDDT     417 facts  (12.8s)
+  [prices] RYAAY: 1254 bars via yfinance
+  [wikidata] RYAAY: Industrials / Airlines
+  [469/940] ✓ RYAAY      8 facts  (10.2s)
+[edgar] KBGGY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001535759.json
+  [prices] KBGGY: 12 bars via yfinance
+  [wikidata] KBGGY: Industrials / Aerospace & Defense
+  [470/940] ✓ KBGGY      8 facts  (2.0s)
+  [prices] FOXA: 1254 bars via yfinance
+  [wikidata] FOXA: Communication Services / Entertainment
+  [471/940] ✓ FOXA     880 facts  (20.1s)
+  [prices] TDY: 1254 bars via yfinance
+  [wikidata] TDY: Technology / Scientific & Technical Instruments
+  [472/940] ✓ TDY     2118 facts  (22.6s)
+  [prices] HAL: 1254 bars via yfinance
+  [wikidata] HAL: Energy / Oil & Gas Equipment & Services
+  [473/940] ✓ HAL     1620 facts  (30.2s)
+  [prices] LPLA: 1254 bars via yfinance
+  [wikidata] LPLA: Financial Services / Capital Markets
+  [474/940] ✓ LPLA    1608 facts  (33.2s)
+  [prices] ATI: 1254 bars via yfinance
+  [wikidata] ATI: Industrials / Metal Fabrication
+  [475/940] ✓ ATI     1958 facts  (29.5s)
+  [prices] NMR: 1254 bars via yfinance
+  [wikidata] NMR: Financial Services / Capital Markets
+  [476/940] ✓ NMR      224 facts  (17.0s)
+  [prices] ZS: 1254 bars via yfinance
+  [wikidata] ZS: Technology / Software - Infrastructure
+  [477/940] ✓ ZS      1081 facts  (16.1s)
+  [prices] EIX: 1254 bars via yfinance
+  [wikidata] EIX: Utilities / Utilities - Regulated Electric
+  [478/940] ✓ EIX     1840 facts  (31.3s)
+  [prices] QSR: 1254 bars via yfinance
+  [wikidata] QSR: Consumer Cyclical / Restaurants
+  [479/940] ✓ QSR     1479 facts  (29.6s)
+  [prices] ATO: 1254 bars via yfinance
+  [wikidata] ATO: Utilities / Utilities - Regulated Gas
+  [480/940] ✓ ATO     1383 facts  (24.2s)
+  [prices] BNTX: 1254 bars via yfinance
+  [wikidata] BNTX: Healthcare / Biotechnology
+  [481/940] ✓ BNTX       8 facts  (10.0s)
+  [prices] PBA: 1254 bars via yfinance
+  [wikidata] PBA: Energy / Oil & Gas Midstream
+  [482/940] ✓ PBA        8 facts  (11.9s)
+  [prices] FTS: 1254 bars via yfinance
+  [wikidata] FTS: Utilities / Utilities - Regulated Electric
+  [483/940] ✓ FTS      625 facts  (15.0s)
+  [prices] DTE: 1254 bars via yfinance
+  [wikidata] DTE: Utilities / Utilities - Regulated Electric
+  [484/940] ✓ DTE     1829 facts  (27.3s)
+  [prices] FISV: 1253 bars via yfinance
+  [wikidata] FISV: None / None
+  [485/940] ✓ FISV    1848 facts  (29.5s)
+  [prices] MTD: 1254 bars via yfinance
+  [wikidata] MTD: Healthcare / Diagnostics & Research
+  [486/940] ✓ MTD     2086 facts  (28.8s)
+  [prices] CTSH: 1254 bars via yfinance
+  [wikidata] CTSH: Technology / Information Technology Services
+  [487/940] ✓ CTSH    2072 facts  (32.5s)
+  [prices] ON: 1254 bars via yfinance
+  [wikidata] ON: Technology / Semiconductors
+  [488/940] ✓ ON      2165 facts  (31.2s)
+  [prices] WSM: 1254 bars via yfinance
+  [wikidata] WSM: Consumer Cyclical / Specialty Retail
+  [489/940] ✓ WSM     1834 facts  (26.0s)
+  [prices] AWK: 1254 bars via yfinance
+  [wikidata] AWK: Utilities / Utilities - Regulated Water
+  [490/940] ✓ AWK     1631 facts  (25.8s)
+  [prices] RBLX: 1254 bars via yfinance
+  [wikidata] RBLX: Communication Services / Electronic Gaming & Multimedia
+  [491/940] ✓ RBLX     798 facts  (21.5s)
+  [prices] DG: 1254 bars via yfinance
+  [wikidata] DG: Consumer Defensive / Discount Stores
+  [492/940] ✓ DG      1596 facts  (23.7s)
+  [prices] LH: 1254 bars via yfinance
+  [wikidata] LH: Healthcare / Diagnostics & Research
+  [493/940] ✓ LH      2273 facts  (34.8s)
+  [prices] OTIS: 1254 bars via yfinance
+  [wikidata] OTIS: Industrials / Specialty Industrial Machinery
+  [494/940] ✓ OTIS     960 facts  (19.9s)
+  [prices] DOV: 1254 bars via yfinance
+  [wikidata] DOV: Industrials / Specialty Industrial Machinery
+  [495/940] ✓ DOV     2149 facts  (28.9s)
+  [prices] RPRX: 1254 bars via yfinance
+  [wikidata] RPRX: Healthcare / Biotechnology
+  [496/940] ✓ RPRX     641 facts  (18.8s)
+  [prices] CPAY: 1254 bars via yfinance
+  [wikidata] CPAY: Technology / Software - Infrastructure
+  [497/940] ✓ CPAY    1709 facts  (27.4s)
+  [prices] INSM: 1254 bars via yfinance
+  [wikidata] INSM: Healthcare / Biotechnology
+  [498/940] ✓ INSM    1761 facts  (28.8s)
+  [prices] FE: 1254 bars via yfinance
+  [wikidata] FE: Utilities / Utilities - Regulated Electric
+  [499/940] ✓ FE      1682 facts  (26.7s)
+  [prices] DGX: 1254 bars via yfinance
+  [wikidata] DGX: Healthcare / Diagnostics & Research
+  [500/940] ✓ DGX     2152 facts  (31.8s)
+  [prices] PHG: 1254 bars via yfinance
+  [wikidata] PHG: Healthcare / Medical Devices
+  [501/940] ✓ PHG        8 facts  (9.6s)
+  [prices] ES: 1254 bars via yfinance
+  [wikidata] ES: Utilities / Utilities - Regulated Electric
+  [502/940] ✓ ES      1483 facts  (24.1s)
+  [prices] XYL: 1254 bars via yfinance
+  [wikidata] XYL: Industrials / Specialty Industrial Machinery
+  [503/940] ✓ XYL     2118 facts  (28.4s)
+[edgar] CHLSY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001885110.json
+  [prices] CHLSY: 507 bars via yfinance
+  [wikidata] CHLSY: Consumer Defensive / Confectioners
+  [504/940] ✓ CHLSY      8 facts  (4.6s)
+  [prices] Q: 208 bars via yfinance
+  [wikidata] Q: Technology / Semiconductor Equipment & Materials
+  [505/940] ✓ Q        209 facts  (9.1s)
+  [prices] PPL: 1254 bars via yfinance
+  [wikidata] PPL: Utilities / Utilities - Regulated Electric
+  [506/940] ✓ PPL     1852 facts  (27.7s)
+  [prices] TPR: 1254 bars via yfinance
+  [wikidata] TPR: Consumer Cyclical / Luxury Goods
+  [507/940] ✓ TPR     2237 facts  (25.8s)
+  [prices] VRSN: 1254 bars via yfinance
+  [wikidata] VRSN: Technology / Software - Infrastructure
+  [508/940] ✓ VRSN    1898 facts  (30.1s)
+  [prices] DLTR: 1254 bars via yfinance
+  [wikidata] DLTR: Consumer Defensive / Discount Stores
+  [509/940] ✓ DLTR    1755 facts  (23.0s)
+  [prices] CINF: 1254 bars via yfinance
+  [wikidata] CINF: Financial Services / Insurance - Property & Casualty
+  [510/940] ✓ CINF    1355 facts  (27.4s)
+  [prices] ROIV: 1254 bars via yfinance
+  [wikidata] ROIV: Healthcare / Biotechnology
+  [511/940] ✓ ROIV     624 facts  (19.8s)
+  [prices] BSP: 39 bars via yfinance
+  [wikidata] BSP: Technology / Software - Application
+  [512/940] ✓ BSP        8 facts  (1.8s)
+  [prices] RF: 1254 bars via yfinance
+  [wikidata] RF: Financial Services / Banks - Regional
+  [513/940] ✓ RF      1361 facts  (26.3s)
+  [prices] SYF: 1254 bars via yfinance
+  [wikidata] SYF: Financial Services / Credit Services
+  [514/940] ✓ SYF     1014 facts  (23.1s)
+  [prices] INCY: 1254 bars via yfinance
+  [wikidata] INCY: Healthcare / Biotechnology
+  [515/940] ✓ INCY    1646 facts  (28.7s)
+  [prices] SN: 771 bars via yfinance
+  [wikidata] SN: Consumer Cyclical / Furnishings, Fixtures & Appliances
+  [516/940] ✓ SN       266 facts  (12.6s)
+  [prices] WRB: 1254 bars via yfinance
+  [wikidata] WRB: Financial Services / Insurance - Property & Casualty
+  [517/940] ✓ WRB     1348 facts  (20.9s)
+[edgar] GELHY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001474968.json
+  [prices] GELHY: 1254 bars via yfinance
+  [wikidata] GELHY: Consumer Cyclical / Auto Manufacturers
+  [518/940] ✓ GELHY      8 facts  (9.3s)
+  [prices] TPL: 1254 bars via yfinance
+  [wikidata] TPL: Energy / Oil & Gas E&P
+  [519/940] ✓ TPL      672 facts  (19.5s)
+  [prices] CNP: 1254 bars via yfinance
+  [wikidata] CNP: Utilities / Utilities - Regulated Electric
+  [520/940] ✓ CNP     1809 facts  (26.5s)
+  [prices] AFRM: 1254 bars via yfinance
+  [wikidata] AFRM: Financial Services / Credit Services
+  [521/940] ✓ AFRM     593 facts  (18.3s)
+  [prices] DRI: 1254 bars via yfinance
+  [wikidata] DRI: Consumer Cyclical / Restaurants
+  [522/940] ✓ DRI     1859 facts  (25.4s)
+  [prices] SW: 1254 bars via yfinance
+  [wikidata] SW: Consumer Cyclical / Packaging & Containers
+  [523/940] ✓ SW       346 facts  (17.0s)
+  [prices] GFS: 1210 bars via yfinance
+  [wikidata] GFS: Technology / Semiconductors
+  [524/940] ✓ GFS        8 facts  (13.6s)
+  [prices] FICO: 1254 bars via yfinance
+  [wikidata] FICO: Technology / Software - Application
+  [525/940] ✓ FICO    2324 facts  (32.0s)
+  [prices] PPG: 1254 bars via yfinance
+  [wikidata] PPG: Basic Materials / Specialty Chemicals
+  [526/940] ✓ PPG     2219 facts  (33.4s)
+  [prices] BRO: 1254 bars via yfinance
+  [wikidata] BRO: Financial Services / Insurance Brokers
+  [527/940] ✓ BRO     1702 facts  (29.1s)
+  [prices] GPN: 1254 bars via yfinance
+  [wikidata] GPN: Industrials / Specialty Business Services
+  [528/940] ✓ GPN     2043 facts  (28.3s)
+  [prices] WST: 1254 bars via yfinance
+  [wikidata] WST: Healthcare / Medical Instruments & Supplies
+  [529/940] ✓ WST     2184 facts  (28.7s)
+  [prices] NVT: 1254 bars via yfinance
+  [wikidata] NVT: Industrials / Electrical Equipment & Parts
+  [530/940] ✓ NVT     1129 facts  (24.4s)
+  [prices] ECHO: 1254 bars via yfinance
+  [wikidata] ECHO: Communication Services / Telecom Services
+  [531/940] ✓ ECHO    2013 facts  (31.2s)
+  [prices] AMRZ: 296 bars via yfinance
+  [wikidata] AMRZ: Basic Materials / Building Materials
+  [532/940] ✓ AMRZ     239 facts  (10.4s)
+  [prices] VRSK: 1254 bars via yfinance
+  [wikidata] VRSK: Industrials / Consulting Services
+  [533/940] ✓ VRSK    1949 facts  (30.6s)
+  [prices] HUBB: 1254 bars via yfinance
+  [wikidata] HUBB: Industrials / Electrical Equipment & Parts
+  [534/940] ✓ HUBB    2014 facts  (30.5s)
+  [prices] FCNCA: 1254 bars via yfinance
+  [wikidata] FCNCA: Financial Services / Banks - Regional
+  [535/940] ✓ FCNCA   1193 facts  (23.0s)
+  [prices] FWONA: 1254 bars via yfinance
+  [wikidata] FWONA: Communication Services / Entertainment
+  [536/940] ✓ FWONA   1581 facts  (25.0s)
+  [prices] EXPD: 1254 bars via yfinance
+  [wikidata] EXPD: Industrials / Integrated Freight & Logistics
+  [537/940] ✓ EXPD    2015 facts  (33.3s)
+  [prices] JBHT: 1254 bars via yfinance
+  [wikidata] JBHT: Industrials / Integrated Freight & Logistics
+  [538/940] ✓ JBHT    1612 facts  (26.9s)
+  [prices] OMC: 1254 bars via yfinance
+  [wikidata] OMC: Communication Services / Advertising Agencies
+  [539/940] ✓ OMC     1834 facts  (30.7s)
+  [prices] CHD: 1254 bars via yfinance
+  [wikidata] CHD: Consumer Defensive / Household & Personal Products
+  [540/940] ✓ CHD     2148 facts  (33.3s)
+  [prices] VLTO: 725 bars via yfinance
+  [wikidata] VLTO: Industrials / Pollution & Treatment Controls
+  [541/940] ✓ VLTO     453 facts  (13.6s)
+  [prices] CIB: 1254 bars via yfinance
+  [wikidata] CIB: Financial Services / Banks - Regional
+  [542/940] ✓ CIB        8 facts  (14.6s)
+  [prices] RIVN: 1201 bars via yfinance
+  [wikidata] RIVN: Consumer Cyclical / Auto Manufacturers
+  [543/940] ✓ RIVN     749 facts  (20.9s)
+  [prices] IHG: 1254 bars via yfinance
+  [wikidata] IHG: Consumer Cyclical / Lodging
+  [544/940] ✓ IHG        8 facts  (9.8s)
+  [prices] PFG: 1254 bars via yfinance
+  [wikidata] PFG: Financial Services / Asset Management
+  [545/940] ✓ PFG     1363 facts  (26.3s)
+  [prices] TROW: 1254 bars via yfinance
+  [wikidata] TROW: Financial Services / Asset Management
+  [546/940] ✓ TROW    1231 facts  (24.2s)
+  [prices] EQR: 15 bars via yfinance
+  [wikidata] EQR: Real Estate / REIT - Residential
+  [547/940] ✓ EQR      185 facts  (3.6s)
+  [prices] TSEM: 1254 bars via yfinance
+  [wikidata] TSEM: Technology / Semiconductors
+  [548/940] ✓ TSEM     915 facts  (18.9s)
+  [prices] USFD: 1254 bars via yfinance
+  [wikidata] USFD: Consumer Defensive / Food Distribution
+  [549/940] ✓ USFD    1441 facts  (24.0s)
+  [prices] CRS: 1254 bars via yfinance
+  [wikidata] CRS: Industrials / Metal Fabrication
+  [550/940] ✓ CRS     2167 facts  (31.3s)
+  [prices] SOFI: 1254 bars via yfinance
+  [wikidata] SOFI: Financial Services / Credit Services
+  [551/940] ✓ SOFI     559 facts  (19.1s)
+  [prices] SQM: 1254 bars via yfinance
+  [wikidata] SQM: Basic Materials / Specialty Chemicals
+  [552/940] ✓ SQM        8 facts  (9.3s)
+  [prices] STZ: 1254 bars via yfinance
+  [wikidata] STZ: Consumer Defensive / Beverages - Brewers
+  [553/940] ✓ STZ     1882 facts  (25.8s)
+  [prices] NRG: 1254 bars via yfinance
+  [wikidata] NRG: Utilities / Utilities - Independent Power Producers
+  [554/940] ✓ NRG     2301 facts  (34.8s)
+  [prices] ROKU: 1254 bars via yfinance
+  [wikidata] ROKU: Communication Services / Entertainment
+  [555/940] ✓ ROKU    1236 facts  (24.4s)
+  [prices] KEY: 1254 bars via yfinance
+  [wikidata] KEY: Financial Services / Banks - Regional
+  [556/940] ✓ KEY     1457 facts  (26.8s)
+  [prices] AER: 1254 bars via yfinance
+  [wikidata] AER: Industrials / Rental & Leasing Services
+  [557/940] ✓ AER      603 facts  (17.7s)
+  [prices] STE: 1254 bars via yfinance
+  [wikidata] STE: Healthcare / Medical Devices
+  [558/940] ✓ STE     1200 facts  (25.8s)
+  [prices] ULTA: 1254 bars via yfinance
+  [wikidata] ULTA: Consumer Cyclical / Specialty Retail
+  [559/940] ✓ ULTA    1773 facts  (24.1s)
+  [prices] EFX: 1254 bars via yfinance
+  [wikidata] EFX: Industrials / Consulting Services
+  [560/940] ✓ EFX     2079 facts  (32.1s)
+  [prices] TW: 1254 bars via yfinance
+  [wikidata] TW: Financial Services / Capital Markets
+  [561/940] ✓ TW       697 facts  (20.1s)
+  [prices] ARXS: 91 bars via yfinance
+  [wikidata] ARXS: Industrials / Aerospace & Defense
+  [562/940] ✓ ARXS     104 facts  (5.1s)
+  [prices] L: 1254 bars via yfinance
+  [wikidata] L: Financial Services / Insurance - Property & Casualty
+  [563/940] ✓ L       1288 facts  (26.7s)
+  [prices] OKTA: 1254 bars via yfinance
+  [wikidata] OKTA: Technology / Software - Infrastructure
+  [564/940] ✓ OKTA    1149 facts  (30.2s)
+  [prices] SMCI: 1254 bars via yfinance
+  [wikidata] SMCI: Technology / Computer Hardware
+  [565/940] ✓ SMCI    1748 facts  (29.1s)
+  [prices] CW: 1254 bars via yfinance
+  [wikidata] CW: Industrials / Aerospace & Defense
+  [566/940] ✓ CW      2126 facts  (31.8s)
+  [prices] DOW: 1254 bars via yfinance
+  [wikidata] DOW: Basic Materials / Chemicals
+  [567/940] ✓ DOW      971 facts  (20.5s)
+  [prices] MKL: 1254 bars via yfinance
+  [wikidata] MKL: Financial Services / Insurance - Property & Casualty
+  [568/940] ✓ MKL     1482 facts  (26.4s)
+  [prices] XPO: 1254 bars via yfinance
+  [wikidata] XPO: Industrials / Trucking
+  [569/940] ✓ XPO     1736 facts  (24.7s)
+[edgar] EDPFY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001039610.json
+  [prices] EDPFY: 1254 bars via yfinance
+  [wikidata] EDPFY: Utilities / Utilities - Diversified
+  [570/940] ✓ EDPFY      8 facts  (9.4s)
+  [prices] THC: 1254 bars via yfinance
+  [wikidata] THC: Healthcare / Medical Care Facilities
+  [571/940] ✓ THC     1678 facts  (29.6s)
+  [prices] FSLR: 1254 bars via yfinance
+  [wikidata] FSLR: Technology / Solar
+  [572/940] ✓ FSLR    2290 facts  (33.7s)
+  [prices] RGLD: 1254 bars via yfinance
+  [wikidata] RGLD: Basic Materials / Gold
+  [573/940] ✓ RGLD    1328 facts  (23.4s)
+  [prices] EXE: 1254 bars via yfinance
+  [wikidata] EXE: Energy / Oil & Gas E&P
+  [574/940] ✓ EXE     1730 facts  (27.0s)
+  [prices] CRCL: 307 bars via yfinance
+  [wikidata] CRCL: Financial Services / Capital Markets
+  [575/940] ✓ CRCL     229 facts  (11.0s)
+  [prices] BCE: 1254 bars via yfinance
+  [wikidata] BCE: Communication Services / Telecom Services
+  [576/940] ✓ BCE        8 facts  (10.1s)
+  [prices] PAAS: 1254 bars via yfinance
+  [wikidata] PAAS: Basic Materials / Gold
+  [577/940] ✓ PAAS       8 facts  (9.6s)
+  [prices] PKG: 1254 bars via yfinance
+  [wikidata] PKG: Consumer Cyclical / Packaging & Containers
+  [578/940] ✓ PKG     2021 facts  (31.1s)
+  [prices] AMCR: 1254 bars via yfinance
+  [wikidata] AMCR: Consumer Cyclical / Packaging & Containers
+  [579/940] ✓ AMCR    1002 facts  (21.5s)
+[edgar] HKHHY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001142231.json
+  [prices] HKHHY: 1254 bars via yfinance
+  [wikidata] HKHHY: Consumer Defensive / Beverages - Brewers
+  [580/940] ✓ HKHHY      8 facts  (11.5s)
+  [prices] RL: 1254 bars via yfinance
+  [wikidata] RL: Consumer Cyclical / Apparel Manufacturing
+  [581/940] ✓ RL      2313 facts  (30.0s)
+  [prices] UTHR: 1254 bars via yfinance
+  [wikidata] UTHR: Healthcare / Drug Manufacturers - Specialty & Generic
+  [582/940] ✓ UTHR    1927 facts  (30.9s)
+[edgar] MTNOY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001163420.json
+  [prices] MTNOY: 1254 bars via yfinance
+  [wikidata] MTNOY: Communication Services / Telecom Services
+  [583/940] ✓ MTNOY      8 facts  (9.5s)
+  [prices] GH: 1254 bars via yfinance
+  [wikidata] GH: Healthcare / Diagnostics & Research
+  [584/940] ✓ GH      1058 facts  (23.9s)
+  [prices] IFF: 1254 bars via yfinance
+  [wikidata] IFF: Basic Materials / Specialty Chemicals
+  [585/940] ✓ IFF     1999 facts  (31.9s)
+  [prices] GIS: 1254 bars via yfinance
+  [wikidata] GIS: Consumer Defensive / Packaged Foods
+  [586/940] ✓ GIS     1920 facts  (26.4s)
+  [prices] BCH: 1254 bars via yfinance
+  [wikidata] BCH: Financial Services / Banks - Regional
+  [587/940] ✓ BCH       14 facts  (10.0s)
+  [prices] IP: 1254 bars via yfinance
+  [wikidata] IP: Consumer Cyclical / Packaging & Containers
+  [588/940] ✓ IP      1989 facts  (29.7s)
+  [prices] FFIV: 1254 bars via yfinance
+  [wikidata] FFIV: Technology / Software - Infrastructure
+  [589/940] ✓ FFIV    2096 facts  (32.2s)
+  [prices] CDE: 1254 bars via yfinance
+  [wikidata] CDE: Basic Materials / Gold
+  [590/940] ✓ CDE     1687 facts  (26.8s)
+  [prices] CMS: 1254 bars via yfinance
+  [wikidata] CMS: Utilities / Utilities - Regulated Electric
+  [591/940] ✓ CMS     1609 facts  (26.9s)
+  [prices] FIS: 1254 bars via yfinance
+  [wikidata] FIS: Technology / Information Technology Services
+  [592/940] ✓ FIS     2020 facts  (29.6s)
+  [prices] LEN: 1254 bars via yfinance
+  [wikidata] LEN: Consumer Cyclical / Residential Construction
+  [593/940] ✓ LEN     1117 facts  (20.4s)
+  [prices] TOST: 1236 bars via yfinance
+  [wikidata] TOST: Technology / Software - Infrastructure
+  [594/940] ✓ TOST     689 facts  (19.9s)
+  [prices] BG: 1254 bars via yfinance
+  [wikidata] BG: Consumer Defensive / Farm Products
+  [595/940] ✓ BG       444 facts  (18.1s)
+  [prices] BR: 1254 bars via yfinance
+  [wikidata] BR: Technology / Information Technology Services
+  [596/940] ✓ BR      2063 facts  (34.0s)
+  [prices] ENTG: 1254 bars via yfinance
+  [wikidata] ENTG: Technology / Semiconductor Equipment & Materials
+  [597/940] ✓ ENTG    2073 facts  (28.6s)
+  [prices] LYB: 1254 bars via yfinance
+  [wikidata] LYB: Basic Materials / Specialty Chemicals
+  [598/940] ✓ LYB     1881 facts  (29.5s)
+  [prices] BURL: 1254 bars via yfinance
+  [wikidata] BURL: Consumer Cyclical / Apparel Retail
+  [599/940] ✓ BURL    1519 facts  (25.6s)
+  [prices] GMAB: 1254 bars via yfinance
+  [wikidata] GMAB: Healthcare / Biotechnology
+  [600/940] ✓ GMAB       8 facts  (9.3s)
+  [prices] MTZ: 1254 bars via yfinance
+  [wikidata] MTZ: Industrials / Engineering & Construction
+  [601/940] ✓ MTZ     1593 facts  (27.1s)
+  [prices] SNA: 1254 bars via yfinance
+  [wikidata] SNA: Industrials / Tools & Accessories
+  [602/940] ✓ SNA     1995 facts  (24.5s)
+  [prices] FTAI: 1254 bars via yfinance
+  [wikidata] FTAI: Industrials / Aerospace & Defense
+  [603/940] ✓ FTAI    1232 facts  (25.7s)
+  [prices] TSN: 1254 bars via yfinance
+  [wikidata] TSN: Consumer Defensive / Farm Products
+  [604/940] ✓ TSN     1776 facts  (21.9s)
+  [prices] U: 1254 bars via yfinance
+  [wikidata] U: Technology / Software - Application
+  [605/940] ✓ U        815 facts  (20.0s)
+  [prices] KSPI: 652 bars via yfinance
+  [wikidata] KSPI: Technology / Software - Infrastructure
+  [606/940] ✓ KSPI       8 facts  (10.2s)
+  [prices] RBRK: 585 bars via yfinance
+  [wikidata] RBRK: Technology / Software - Infrastructure
+  [607/940] ✓ RBRK     377 facts  (11.4s)
+  [prices] YPF: 1254 bars via yfinance
+  [wikidata] YPF: Energy / Oil & Gas Integrated
+  [608/940] ✓ YPF        8 facts  (9.1s)
+  [prices] WES: 1254 bars via yfinance
+  [wikidata] WES: Energy / Oil & Gas Midstream
+  [609/940] ✓ WES     1241 facts  (20.7s)
+  [prices] LUV: 1254 bars via yfinance
+  [wikidata] LUV: Industrials / Airlines
+  [610/940] ✓ LUV     1972 facts  (31.1s)
+  [prices] PR: 1254 bars via yfinance
+  [wikidata] PR: Energy / Oil & Gas E&P
+  [611/940] ✓ PR       973 facts  (20.6s)
+  [prices] WWD: 1254 bars via yfinance
+  [wikidata] WWD: Industrials / Aerospace & Defense
+  [612/940] ✓ WWD     2048 facts  (27.0s)
+  [prices] STLA: 1254 bars via yfinance
+  [wikidata] STLA: Consumer Cyclical / Auto Manufacturers
+  [613/940] ✓ STLA       8 facts  (9.7s)
+  [prices] MTSI: 1254 bars via yfinance
+  [wikidata] MTSI: Technology / Semiconductors
+  [614/940] ✓ MTSI    2098 facts  (26.4s)
+  [prices] RCI: 1254 bars via yfinance
+  [wikidata] RCI: Communication Services / Telecom Services
+  [615/940] ✓ RCI        8 facts  (13.1s)
+  [prices] SBAC: 1254 bars via yfinance
+  [wikidata] SBAC: Real Estate / REIT - Specialty
+  [616/940] ✓ SBAC    2177 facts  (32.5s)
+  [prices] FDXF: 63 bars via yfinance
+  [wikidata] FDXF: Industrials / Integrated Freight & Logistics
+  [617/940] ✓ FDXF      73 facts  (5.9s)
+  [prices] SSNC: 1254 bars via yfinance
+  [wikidata] SSNC: Technology / Software - Application
+  [618/940] ✓ SSNC    2012 facts  (28.1s)
+  [prices] NI: 1254 bars via yfinance
+  [wikidata] NI: Utilities / Utilities - Regulated Gas
+  [619/940] ✓ NI      1791 facts  (27.6s)
+  [prices] CF: 1254 bars via yfinance
+  [wikidata] CF: Basic Materials / Agricultural Inputs
+  [620/940] ✓ CF      1951 facts  (30.7s)
+[edgar] TELNY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001126113.json
+  [prices] TELNY: 1254 bars via yfinance
+  [wikidata] TELNY: Communication Services / Telecom Services
+  [621/940] ✓ TELNY      8 facts  (9.8s)
+  [prices] RS: 1254 bars via yfinance
+  [wikidata] RS: Basic Materials / Steel
+  [622/940] ✓ RS      2105 facts  (31.7s)
+  [prices] ZBH: 1254 bars via yfinance
+  [wikidata] ZBH: Healthcare / Medical Devices
+  [623/940] ✓ ZBH     2164 facts  (22.6s)
+  [prices] VTRS: 1254 bars via yfinance
+  [wikidata] VTRS: Healthcare / Drug Manufacturers - Specialty & Generic
+  [624/940] ✓ VTRS     866 facts  (20.3s)
+  [prices] CNH: 1254 bars via yfinance
+  [wikidata] CNH: Industrials / Farm & Heavy Construction Machinery
+  [625/940] ✓ CNH     1252 facts  (24.4s)
+  [prices] ESS: 1254 bars via yfinance
+  [wikidata] ESS: Real Estate / REIT - Residential
+  [626/940] ✓ ESS     1253 facts  (21.6s)
+  [prices] EVRG: 1254 bars via yfinance
+  [wikidata] EVRG: Utilities / Utilities - Regulated Electric
+  [627/940] ✓ EVRG     845 facts  (20.4s)
+  [prices] TSCO: 1254 bars via yfinance
+  [wikidata] TSCO: Consumer Cyclical / Specialty Retail
+  [628/940] ✓ TSCO    1931 facts  (24.7s)
+  [prices] GPC: 1254 bars via yfinance
+  [wikidata] GPC: Consumer Cyclical / Auto Parts
+  [629/940] ✓ GPC     1892 facts  (30.8s)
+  [prices] ASTS: 1254 bars via yfinance
+  [wikidata] ASTS: Technology / Communication Equipment
+  [630/940] ✓ ASTS     678 facts  (20.4s)
+[edgar] WTKWY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0000861967.json
+  [prices] WTKWY: 1254 bars via yfinance
+  [wikidata] WTKWY: Industrials / Specialty Business Services
+  [631/940] ✓ WTKWY      8 facts  (8.9s)
+  [prices] NDSN: 1254 bars via yfinance
+  [wikidata] NDSN: Industrials / Specialty Industrial Machinery
+  [632/940] ✓ NDSN    2058 facts  (24.8s)
+  [prices] WIT: 1254 bars via yfinance
+  [wikidata] WIT: Technology / Information Technology Services
+  [633/940] ✓ WIT        8 facts  (10.1s)
+  [prices] DD: 1254 bars via yfinance
+  [wikidata] DD: Basic Materials / Specialty Chemicals
+  [634/940] ✓ DD      1184 facts  (22.7s)
+  [prices] FTV: 1254 bars via yfinance
+  [wikidata] FTV: Technology / Scientific & Technical Instruments
+  [635/940] ✓ FTV     1437 facts  (23.9s)
+  [prices] OVV: 1254 bars via yfinance
+  [wikidata] OVV: Energy / Oil & Gas E&P
+  [636/940] ✓ OVV      887 facts  (22.1s)
+  [prices] OWL: 1254 bars via yfinance
+  [wikidata] OWL: Financial Services / Asset Management
+  [637/940] ✓ OWL      565 facts  (16.9s)
+  [prices] MKSI: 1254 bars via yfinance
+  [wikidata] MKSI: Technology / Scientific & Technical Instruments
+  [638/940] ✓ MKSI    2359 facts  (33.7s)
+  [prices] MGA: 1254 bars via yfinance
+  [wikidata] MGA: Consumer Cyclical / Auto Parts
+  [639/940] ✓ MGA      540 facts  (15.5s)
+  [prices] INVH: 1254 bars via yfinance
+  [wikidata] INVH: Real Estate / REIT - Residential
+  [640/940] ✓ INVH     857 facts  (19.5s)
+  [prices] NTNX: 1254 bars via yfinance
+  [wikidata] NTNX: Technology / Software - Infrastructure
+  [641/940] ✓ NTNX    1218 facts  (18.8s)
+  [prices] ROL: 1254 bars via yfinance
+  [wikidata] ROL: Consumer Cyclical / Personal Services
+  [642/940] ✓ ROL     1832 facts  (28.5s)
+  [prices] CHTR: 1254 bars via yfinance
+  [wikidata] CHTR: Communication Services / Telecom Services
+  [643/940] ✓ CHTR    1703 facts  (28.8s)
+  [prices] JLL: 1254 bars via yfinance
+  [wikidata] JLL: Real Estate / Real Estate Services
+  [644/940] ✓ JLL     1861 facts  (31.0s)
+  [prices] FLUT: 1254 bars via yfinance
+  [wikidata] FLUT: Consumer Cyclical / Gambling
+  [645/940] ✓ FLUT     402 facts  (18.1s)
+  [prices] J: 1254 bars via yfinance
+  [wikidata] J: Industrials / Engineering & Construction
+  [646/940] ✓ J       1919 facts  (23.8s)
+  [prices] PKX: 1254 bars via yfinance
+  [wikidata] PKX: Basic Materials / Steel
+  [647/940] ✓ PKX        8 facts  (9.6s)
+  [prices] LNT: 1254 bars via yfinance
+  [wikidata] LNT: Utilities / Utilities - Regulated Electric
+  [648/940] ✓ LNT     1616 facts  (26.2s)
+  [prices] EWBC: 1254 bars via yfinance
+  [wikidata] EWBC: Financial Services / Banks - Regional
+  [649/940] ✓ EWBC    1279 facts  (25.4s)
+  [prices] PAA: 1254 bars via yfinance
+  [wikidata] PAA: Energy / Oil & Gas Midstream
+  [650/940] ✓ PAA     1363 facts  (23.1s)
+  [prices] APG: 1254 bars via yfinance
+  [wikidata] APG: Industrials / Engineering & Construction
+  [651/940] ✓ APG      937 facts  (21.4s)
+  [prices] BEN: 1254 bars via yfinance
+  [wikidata] BEN: Financial Services / Asset Management
+  [652/940] ✓ BEN     1761 facts  (27.9s)
+  [prices] WY: 1254 bars via yfinance
+  [wikidata] WY: Real Estate / REIT - Specialty
+  [653/940] ✓ WY      1964 facts  (28.5s)
+  [prices] JHX: 1254 bars via yfinance
+  [wikidata] JHX: Basic Materials / Building Materials
+  [654/940] ✓ JHX      608 facts  (17.5s)
+  [prices] NLY: 1254 bars via yfinance
+  [wikidata] NLY: Real Estate / REIT - Mortgage
+  [655/940] ✓ NLY     1307 facts  (22.8s)
+  [prices] CG: 1254 bars via yfinance
+  [wikidata] CG: Financial Services / Asset Management
+  [656/940] ✓ CG      1424 facts  (25.8s)
+[edgar] TRMOY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0002071881.json
+  [prices] TRMOY: 31 bars via yfinance
+  [wikidata] TRMOY: Energy / Oil & Gas E&P
+  [657/940] ✓ TRMOY      8 facts  (1.8s)
+  [prices] SITM: 1254 bars via yfinance
+  [wikidata] SITM: Technology / Semiconductors
+  [658/940] ✓ SITM     908 facts  (23.3s)
+  [prices] GEN: 1254 bars via yfinance
+  [wikidata] GEN: Technology / Software - Infrastructure
+  [659/940] ✓ GEN     2187 facts  (26.6s)
+  [prices] LDOS: 1254 bars via yfinance
+  [wikidata] LDOS: Technology / Information Technology Services
+  [660/940] ✓ LDOS    1859 facts  (27.7s)
+  [prices] MEDP: 1254 bars via yfinance
+  [wikidata] MEDP: Healthcare / Diagnostics & Research
+  [661/940] ✓ MEDP    1219 facts  (26.1s)
+  [prices] ONTO: 1254 bars via yfinance
+  [wikidata] ONTO: Technology / Semiconductor Equipment & Materials
+  [662/940] ✓ ONTO    2045 facts  (28.4s)
+  [prices] IEX: 1254 bars via yfinance
+  [wikidata] IEX: Industrials / Specialty Industrial Machinery
+  [663/940] ✓ IEX     2132 facts  (30.2s)
+  [prices] ZBRA: 1254 bars via yfinance
+  [wikidata] ZBRA: Technology / Communication Equipment
+  [664/940] ✓ ZBRA    2221 facts  (23.4s)
+  [prices] BALL: 1254 bars via yfinance
+  [wikidata] BALL: Consumer Cyclical / Packaging & Containers
+  [665/940] ✓ BALL    2066 facts  (30.1s)
+  [prices] NVR: 1254 bars via yfinance
+  [wikidata] NVR: Consumer Cyclical / Residential Construction
+  [666/940] ✓ NVR     1020 facts  (21.3s)
+  [prices] BSAC: 1254 bars via yfinance
+  [wikidata] BSAC: Financial Services / Banks - Regional
+  [667/940] ✓ BSAC      17 facts  (10.5s)
+  [prices] H: 1254 bars via yfinance
+  [wikidata] H: Consumer Cyclical / Lodging
+  [668/940] ✓ H       1799 facts  (30.5s)
+  [prices] DINO: 1254 bars via yfinance
+  [wikidata] DINO: Energy / Oil & Gas Refining & Marketing
+  [669/940] ✓ DINO     633 facts  (19.8s)
+  [prices] WF: 1254 bars via yfinance
+  [wikidata] WF: Financial Services / Banks - Regional
+  [670/940] ✓ WF        34 facts  (10.9s)
+  [prices] PHYS: 1254 bars via yfinance
+  [wikidata] PHYS: None / None
+  [671/940] ✓ PHYS       8 facts  (10.2s)
+[edgar] ARNNY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001719117.json
+  [prices] ARNNY: 276 bars via yfinance
+  [wikidata] ARNNY: Financial Services / Insurance - Diversified
+  [672/940] ✓ ARNNY      8 facts  (3.7s)
+  [prices] PTC: 1254 bars via yfinance
+  [wikidata] PTC: Technology / Software - Application
+  [673/940] ✓ PTC     2143 facts  (30.7s)
+  [prices] ALB: 1254 bars via yfinance
+  [wikidata] ALB: Basic Materials / Specialty Chemicals
+  [674/940] ✓ ALB     2059 facts  (33.3s)
+  [prices] CHRW: 1254 bars via yfinance
+  [wikidata] CHRW: Industrials / Integrated Freight & Logistics
+  [675/940] ✓ CHRW    1965 facts  (30.3s)
+  [prices] IONQ: 1254 bars via yfinance
+  [wikidata] IONQ: Technology / Computer Hardware
+  [676/940] ✓ IONQ     660 facts  (18.4s)
+  [prices] PFGC: 1254 bars via yfinance
+  [wikidata] PFGC: Consumer Defensive / Food Distribution
+  [677/940] ✓ PFGC    1349 facts  (23.5s)
+  [prices] NWSA: 1254 bars via yfinance
+  [wikidata] NWSA: Communication Services / Entertainment
+  [678/940] ✓ NWSA    1439 facts  (27.1s)
+  [prices] INIO: 55 bars via yfinance
+  [wikidata] INIO: Industrials / Specialty Industrial Machinery
+  [679/940] ✓ INIO      68 facts  (4.3s)
+  [prices] CDW: 1254 bars via yfinance
+  [wikidata] CDW: Technology / Information Technology Services
+  [680/940] ✓ CDW     1929 facts  (31.6s)
+  [prices] CLH: 1254 bars via yfinance
+  [wikidata] CLH: Industrials / Waste Management
+  [681/940] ✓ CLH     1904 facts  (32.2s)
+  [prices] ASND: 1254 bars via yfinance
+  [wikidata] ASND: Healthcare / Biotechnology
+  [682/940] ✓ ASND       8 facts  (10.9s)
+  [prices] JAZZ: 1254 bars via yfinance
+  [wikidata] JAZZ: Healthcare / Biotechnology
+  [683/940] ✓ JAZZ    1890 facts  (31.3s)
+  [prices] WCC: 1254 bars via yfinance
+  [wikidata] WCC: Industrials / Industrial Distribution
+  [684/940] ✓ WCC     2003 facts  (32.8s)
+  [prices] PS: 82 bars via yfinance
+  [wikidata] PS: Financial Services / Asset Management
+  [685/940] ✓ PS        76 facts  (5.0s)
+  [prices] WPC: 1254 bars via yfinance
+  [wikidata] WPC: Real Estate / REIT - Diversified
+  [686/940] ✓ WPC     1410 facts  (23.6s)
+  [prices] SBS: 1254 bars via yfinance
+  [wikidata] SBS: Utilities / Utilities - Regulated Water
+  [687/940] ✓ SBS        8 facts  (11.7s)
+  [prices] TRU: 1254 bars via yfinance
+  [wikidata] TRU: Financial Services / Financial Data & Stock Exchanges
+  [688/940] ✓ TRU     1609 facts  (29.6s)
+  [prices] KIM: 1254 bars via yfinance
+  [wikidata] KIM: Real Estate / REIT - Retail
+  [689/940] ✓ KIM     1235 facts  (21.4s)
+  [prices] LSCC: 1254 bars via yfinance
+  [wikidata] LSCC: Technology / Semiconductors
+  [690/940] ✓ LSCC    2038 facts  (29.7s)
+  [prices] VNOM: 1254 bars via yfinance
+  [wikidata] VNOM: Energy / Oil & Gas Midstream
+  [691/940] ✓ VNOM     165 facts  (13.4s)
+  [prices] EQX: 1254 bars via yfinance
+  [wikidata] EQX: Basic Materials / Gold
+  [692/940] ✓ EQX        8 facts  (10.4s)
+  [prices] DKS: 1254 bars via yfinance
+  [wikidata] DKS: Consumer Cyclical / Specialty Retail
+  [693/940] ✓ DKS     1758 facts  (26.2s)
+  [prices] AGI: 1254 bars via yfinance
+  [wikidata] AGI: Basic Materials / Gold
+  [694/940] ✓ AGI        8 facts  (10.5s)
+  [prices] RGA: 1254 bars via yfinance
+  [wikidata] RGA: Financial Services / Insurance - Reinsurance
+  [695/940] ✓ RGA     1245 facts  (26.0s)
+  [prices] GWRE: 1254 bars via yfinance
+  [wikidata] GWRE: Technology / Software - Application
+  [696/940] ✓ GWRE    1936 facts  (28.1s)
+[edgar] BAWAY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001968385.json
+  [prices] BAWAY: 365 bars via yfinance
+  [wikidata] BAWAY: None / None
+  [697/940] ✓ BAWAY      8 facts  (4.1s)
+  [prices] HST: 1254 bars via yfinance
+  [wikidata] HST: Real Estate / REIT - Hotel & Motel
+  [698/940] ✓ HST     1299 facts  (24.2s)
+  [prices] BBIO: 1254 bars via yfinance
+  [wikidata] BBIO: Healthcare / Biotechnology
+  [699/940] ✓ BBIO     849 facts  (22.5s)
+  [prices] RBC: 1254 bars via yfinance
+  [wikidata] RBC: Industrials / Tools & Accessories
+  [700/940] ✓ RBC     1954 facts  (27.4s)
+[edgar] DSEEY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001481045.json
+  [prices] DSEEY: 1253 bars via yfinance
+  [wikidata] DSEEY: Financial Services / Capital Markets
+  [701/940] ✓ DSEEY      8 facts  (10.1s)
+  [prices] TIGO: 1254 bars via yfinance
+  [wikidata] TIGO: Communication Services / Telecom Services
+  [702/940] ✓ TIGO       8 facts  (10.8s)
+  [prices] ARMK: 1254 bars via yfinance
+  [wikidata] ARMK: Industrials / Specialty Business Services
+  [703/940] ✓ ARMK    1456 facts  (27.7s)
+  [prices] RBA: 1254 bars via yfinance
+  [wikidata] RBA: Industrials / Specialty Business Services
+  [704/940] ✓ RBA     1428 facts  (28.2s)
+  [prices] NBIX: 1254 bars via yfinance
+  [wikidata] NBIX: Healthcare / Drug Manufacturers - Specialty & Generic
+  [705/940] ✓ NBIX    1588 facts  (28.8s)
+  [prices] SOLV: 606 bars via yfinance
+  [wikidata] SOLV: Healthcare / Medical Instruments & Supplies
+  [706/940] ✓ SOLV     433 facts  (14.2s)
+  [prices] LAMR: 1254 bars via yfinance
+  [wikidata] LAMR: Real Estate / REIT - Specialty
+  [707/940] ✓ LAMR    1872 facts  (29.2s)
+  [prices] GIB: 1254 bars via yfinance
+  [wikidata] GIB: Technology / Information Technology Services
+  [708/940] ✓ GIB        8 facts  (10.2s)
+  [prices] TU: 1254 bars via yfinance
+  [wikidata] TU: Communication Services / Telecom Services
+  [709/940] ✓ TU         8 facts  (10.2s)
+  [prices] EMA: 1254 bars via yfinance
+  [wikidata] EMA: Utilities / Utilities - Regulated Electric
+  [710/940] ✓ EMA      345 facts  (13.7s)
+  [prices] MAA: 1254 bars via yfinance
+  [wikidata] MAA: Real Estate / REIT - Residential
+  [711/940] ✓ MAA      825 facts  (19.5s)
+  [prices] LECO: 1254 bars via yfinance
+  [wikidata] LECO: Industrials / Tools & Accessories
+  [712/940] ✓ LECO    1838 facts  (28.7s)
+  [prices] SKM: 1254 bars via yfinance
+  [wikidata] SKM: Communication Services / Telecom Services
+  [713/940] ✓ SKM        8 facts  (10.2s)
+  [prices] PNFP: 1254 bars via yfinance
+  [wikidata] PNFP: Financial Services / Banks - Regional
+  [714/940] ✓ PNFP     129 facts  (14.4s)
+[edgar] SCRNY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001544379.json
+  [prices] SCRNY: 101 bars via yfinance
+  [wikidata] SCRNY: Technology / Semiconductor Equipment & Materials
+  [715/940] ✓ SCRNY      8 facts  (2.2s)
+  [prices] STRL: 1254 bars via yfinance
+  [wikidata] STRL: Industrials / Engineering & Construction
+  [716/940] ✓ STRL    1652 facts  (29.8s)
+  [prices] AKAM: 1254 bars via yfinance
+  [wikidata] AKAM: Technology / Software - Infrastructure
+  [717/940] ✓ AKAM    2080 facts  (33.1s)
+  [prices] MKC: 1254 bars via yfinance
+  [wikidata] MKC: Consumer Defensive / Packaged Foods
+  [718/940] ✓ MKC     1972 facts  (27.7s)
+  [prices] FN: 1254 bars via yfinance
+  [wikidata] FN: Technology / Electronic Components
+  [719/940] ✓ FN      1855 facts  (24.3s)
+  [prices] APA: 1254 bars via yfinance
+  [wikidata] APA: Energy / Oil & Gas E&P
+  [720/940] ✓ APA      526 facts  (21.8s)
+  [prices] SUI: 1254 bars via yfinance
+  [wikidata] SUI: Real Estate / REIT - Residential
+  [721/940] ✓ SUI     1185 facts  (23.8s)
+  [prices] GFL: 1254 bars via yfinance
+  [wikidata] GFL: Industrials / Waste Management
+  [722/940] ✓ GFL        8 facts  (10.0s)
+  [prices] ULS: 594 bars via yfinance
+  [wikidata] ULS: Industrials / Specialty Business Services
+  [723/940] ✓ ULS      385 facts  (14.5s)
+  [prices] DOC: 1254 bars via yfinance
+  [wikidata] DOC: Real Estate / REIT - Healthcare Facilities
+  [724/940] ✓ DOC     1523 facts  (25.5s)
+  [prices] SWK: 1254 bars via yfinance
+  [wikidata] SWK: Industrials / Tools & Accessories
+  [725/940] ✓ SWK     2324 facts  (30.7s)
+  [prices] TLK: 1254 bars via yfinance
+  [wikidata] TLK: Communication Services / Telecom Services
+  [726/940] ✓ TLK        8 facts  (10.2s)
+  [prices] TLN: 810 bars via yfinance
+  [wikidata] TLN: Utilities / Utilities - Independent Power Producers
+  [727/940] ✓ TLN      542 facts  (17.5s)
+  [prices] FIG: 269 bars via yfinance
+  [wikidata] FIG: Technology / Software - Application
+  [728/940] ✓ FIG      245 facts  (14.1s)
+  [prices] TYL: 1254 bars via yfinance
+  [wikidata] TYL: Technology / Software - Application
+  [729/940] ✓ TYL     1873 facts  (32.1s)
+  [prices] BMNR: 307 bars via yfinance
+  [wikidata] BMNR: Financial Services / Capital Markets
+  [730/940] ✓ BMNR     511 facts  (8.6s)
+  [prices] FIVE: 1254 bars via yfinance
+  [wikidata] FIVE: Consumer Cyclical / Specialty Retail
+  [731/940] ✓ FIVE    1525 facts  (31.8s)
+  [prices] WMG: 1254 bars via yfinance
+  [wikidata] WMG: Communication Services / Entertainment
+  [732/940] ✓ WMG     1919 facts  (28.9s)
+  [prices] KEP: 1254 bars via yfinance
+  [wikidata] KEP: Utilities / Utilities - Regulated Electric
+  [733/940] ✓ KEP        8 facts  (10.5s)
+  [prices] EG: 1254 bars via yfinance
+  [wikidata] EG: Financial Services / Insurance - Reinsurance
+  [734/940] ✓ EG      1128 facts  (24.1s)
+  [prices] MAS: 1254 bars via yfinance
+  [wikidata] MAS: Industrials / Building Products & Equipment
+  [735/940] ✓ MAS     2176 facts  (31.9s)
+  [prices] GRAB: 1254 bars via yfinance
+  [wikidata] GRAB: Technology / Software - Application
+  [736/940] ✓ GRAB       9 facts  (13.8s)
+  [prices] CSL: 1254 bars via yfinance
+  [wikidata] CSL: Industrials / Building Products & Equipment
+  [737/940] ✓ CSL     2098 facts  (31.8s)
+  [prices] ARCC: 1254 bars via yfinance
+  [wikidata] ARCC: Financial Services / Asset Management
+  [738/940] ✓ ARCC     273 facts  (13.0s)
+  [prices] PSLV: 1254 bars via yfinance
+  [wikidata] PSLV: None / None
+  [739/940] ✓ PSLV       8 facts  (10.1s)
+  [prices] SUN: 1254 bars via yfinance
+  [wikidata] SUN: Energy / Oil & Gas Refining & Marketing
+  [740/940] ✓ SUN     1435 facts  (24.5s)
+  [prices] IVZ: 1254 bars via yfinance
+  [wikidata] IVZ: Financial Services / Asset Management
+  [741/940] ✓ IVZ     1833 facts  (32.0s)
+  [prices] PAG: 1254 bars via yfinance
+  [wikidata] PAG: Consumer Cyclical / Auto & Truck Dealerships
+  [742/940] ✓ PAG     1884 facts  (30.9s)
+  [prices] CRL: 1254 bars via yfinance
+  [wikidata] CRL: Healthcare / Diagnostics & Research
+  [743/940] ✓ CRL     2022 facts  (29.5s)
+  [prices] CRBG: 988 bars via yfinance
+  [wikidata] CRBG: Financial Services / Asset Management
+  [744/940] ✓ CRBG     355 facts  (15.1s)
+  [prices] IREN: 1196 bars via yfinance
+  [wikidata] IREN: Financial Services / Capital Markets
+  [745/940] ✓ IREN     190 facts  (13.0s)
+  [prices] AIZ: 1254 bars via yfinance
+  [wikidata] AIZ: Financial Services / Insurance - Property & Casualty
+  [746/940] ✓ AIZ     1593 facts  (27.5s)
+  [prices] DT: 1254 bars via yfinance
+  [wikidata] DT: Technology / Software - Application
+  [747/940] ✓ DT       992 facts  (23.4s)
+  [prices] UNM: 1254 bars via yfinance
+  [wikidata] UNM: Financial Services / Insurance - Life
+  [748/940] ✓ UNM     1189 facts  (24.2s)
+  [prices] TRMB: 1254 bars via yfinance
+  [wikidata] TRMB: Technology / Scientific & Technical Instruments
+  [749/940] ✓ TRMB    2250 facts  (30.1s)
+  [prices] TKO: 1254 bars via yfinance
+  [wikidata] TKO: Communication Services / Entertainment
+  [750/940] ✓ TKO      469 facts  (18.6s)
+  [prices] W: 1254 bars via yfinance
+  [wikidata] W: Consumer Cyclical / Internet Retail
+  [751/940] ✓ W       1429 facts  (26.8s)
+  [prices] TXT: 1254 bars via yfinance
+  [wikidata] TXT: Industrials / Aerospace & Defense
+  [752/940] ✓ TXT     1348 facts  (21.7s)
+  [prices] OHI: 1254 bars via yfinance
+  [wikidata] OHI: Real Estate / REIT - Healthcare Facilities
+  [753/940] ✓ OHI     1414 facts  (26.0s)
+  [prices] CACI: 1254 bars via yfinance
+  [wikidata] CACI: Technology / Information Technology Services
+  [754/940] ✓ CACI    2056 facts  (31.5s)
+  [prices] ERIE: 1254 bars via yfinance
+  [wikidata] ERIE: Financial Services / Insurance Brokers
+  [755/940] ✓ ERIE    1064 facts  (24.5s)
+  [prices] REG: 1254 bars via yfinance
+  [wikidata] REG: Real Estate / REIT - Retail
+  [756/940] ✓ REG      750 facts  (20.8s)
+  [prices] MLI: 1254 bars via yfinance
+  [wikidata] MLI: Industrials / Metal Fabrication
+  [757/940] ✓ MLI     2004 facts  (27.4s)
+  [prices] LULU: 1254 bars via yfinance
+  [wikidata] LULU: Consumer Cyclical / Apparel Retail
+  [758/940] ✓ LULU    1838 facts  (27.2s)
+  [prices] AVY: 1254 bars via yfinance
+  [wikidata] AVY: Consumer Cyclical / Packaging & Containers
+  [759/940] ✓ AVY     1969 facts  (27.5s)
+  [prices] LOGI: 1254 bars via yfinance
+  [wikidata] LOGI: Technology / Computer Hardware
+  [760/940] ✓ LOGI    1859 facts  (28.1s)
+  [prices] QXO: 1254 bars via yfinance
+  [wikidata] QXO: Industrials / Industrial Distribution
+  [761/940] ✓ QXO     1896 facts  (28.5s)
+  [prices] UHAL: 1254 bars via yfinance
+  [wikidata] UHAL: Industrials / Rental & Leasing Services
+  [762/940] ✓ UHAL    1136 facts  (22.3s)
+  [prices] ALLE: 1254 bars via yfinance
+  [wikidata] ALLE: Industrials / Security & Protection Services
+  [763/940] ✓ ALLE    1534 facts  (28.3s)
+  [prices] LII: 1254 bars via yfinance
+  [wikidata] LII: Industrials / Building Products & Equipment
+  [764/940] ✓ LII     1959 facts  (30.7s)
+[edgar] BLMOY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0002109234.json
+  [prices] BLMOY: 120 bars via yfinance
+  [wikidata] BLMOY: Industrials / Building Products & Equipment
+  [765/940] ✓ BLMOY      8 facts  (2.5s)
+  [prices] RVTY: 1254 bars via yfinance
+  [wikidata] RVTY: Healthcare / Diagnostics & Research
+  [766/940] ✓ RVTY    2272 facts  (28.3s)
+  [prices] HL: 1254 bars via yfinance
+  [wikidata] HL: Basic Materials / Other Precious Metals & Mining
+  [767/940] ✓ HL      1665 facts  (28.2s)
+  [prices] BWXT: 1254 bars via yfinance
+  [wikidata] BWXT: Industrials / Aerospace & Defense
+  [768/940] ✓ BWXT    2067 facts  (33.9s)
+  [prices] BAX: 1254 bars via yfinance
+  [wikidata] BAX: Healthcare / Medical Instruments & Supplies
+  [769/940] ✓ BAX     2094 facts  (31.9s)
+  [prices] RNR: 1254 bars via yfinance
+  [wikidata] RNR: Financial Services / Insurance - Reinsurance
+  [770/940] ✓ RNR     1366 facts  (26.3s)
+  [prices] AEG: 1254 bars via yfinance
+  [wikidata] AEG: Financial Services / Insurance - Diversified
+  [771/940] ✓ AEG        8 facts  (10.9s)
+  [prices] RPM: 1254 bars via yfinance
+  [wikidata] RPM: Basic Materials / Specialty Chemicals
+  [772/940] ✓ RPM     1809 facts  (25.7s)
+  [prices] EMBJ: 1254 bars via yfinance
+  [wikidata] EMBJ: Industrials / Aerospace & Defense
+  [773/940] ✓ EMBJ       8 facts  (11.5s)
+  [prices] SGI: 1254 bars via yfinance
+  [wikidata] SGI: Consumer Cyclical / Furnishings, Fixtures & Appliances
+  [774/940] ✓ SGI     1949 facts  (29.6s)
+  [prices] EXEL: 1254 bars via yfinance
+  [wikidata] EXEL: Healthcare / Biotechnology
+  [775/940] ✓ EXEL    1835 facts  (28.7s)
+[edgar] VARRY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001919275.json
+  [prices] VARRY: 824 bars via yfinance
+  [wikidata] VARRY: Energy / Oil & Gas E&P
+  [776/940] ✓ VARRY      8 facts  (7.3s)
+  [prices] TXRH: 1254 bars via yfinance
+  [wikidata] TXRH: Consumer Cyclical / Restaurants
+  [777/940] ✓ TXRH    1924 facts  (29.1s)
+  [prices] HAS: 1254 bars via yfinance
+  [wikidata] HAS: Consumer Cyclical / Leisure
+  [778/940] ✓ HAS     2198 facts  (30.3s)
+  [prices] SJM: 1254 bars via yfinance
+  [wikidata] SJM: Consumer Defensive / Packaged Foods
+  [779/940] ✓ SJM     1912 facts  (27.0s)
+  [prices] CNA: 1254 bars via yfinance
+  [wikidata] CNA: Financial Services / Insurance - Property & Casualty
+  [780/940] ✓ CNA     1263 facts  (23.9s)
+  [prices] ICLR: 1254 bars via yfinance
+  [wikidata] ICLR: Healthcare / Diagnostics & Research
+  [781/940] ✓ ICLR    1952 facts  (29.7s)
+  [prices] EQH: 1254 bars via yfinance
+  [wikidata] EQH: Financial Services / Asset Management
+  [782/940] ✓ EQH      654 facts  (31.1s)
+  [prices] CHKP: 1254 bars via yfinance
+  [wikidata] CHKP: Technology / Software - Infrastructure
+  [783/940] ✓ CHKP     578 facts  (17.8s)
+  [prices] CORT: 1254 bars via yfinance
+  [wikidata] CORT: Healthcare / Biotechnology
+  [784/940] ✓ CORT    1572 facts  (29.4s)
+  [prices] CSGP: 1254 bars via yfinance
+  [wikidata] CSGP: Real Estate / Real Estate Services
+  [785/940] ✓ CSGP    1934 facts  (32.5s)
+  [prices] GL: 1254 bars via yfinance
+  [wikidata] GL: Financial Services / Insurance - Life
+  [786/940] ✓ GL      1441 facts  (28.1s)
+  [prices] SEIC: 1254 bars via yfinance
+  [wikidata] SEIC: Financial Services / Asset Management
+  [787/940] ✓ SEIC    1862 facts  (29.3s)
+  [prices] PINS: 1254 bars via yfinance
+  [wikidata] PINS: Communication Services / Internet Content & Information
+  [788/940] ✓ PINS     823 facts  (22.7s)
+  [prices] BF-B: 1254 bars via yfinance
+  [wikidata] BF-B: Consumer Defensive / Beverages - Wineries & Distilleries
+  [789/940] ✓ BF-B    1848 facts  (27.6s)
+  [prices] HBM: 1254 bars via yfinance
+  [wikidata] HBM: Basic Materials / Copper
+  [790/940] ✓ HBM        8 facts  (12.7s)
+  [prices] DOCN: 1254 bars via yfinance
+  [wikidata] DOCN: Technology / Software - Infrastructure
+  [791/940] ✓ DOCN     848 facts  (21.9s)
+  [prices] BWA: 1254 bars via yfinance
+  [wikidata] BWA: Consumer Cyclical / Auto Parts
+  [792/940] ✓ BWA     2010 facts  (32.9s)
+  [prices] AA: 1254 bars via yfinance
+  [wikidata] AA: Basic Materials / Aluminum
+  [793/940] ✓ AA      1142 facts  (17.3s)
+  [prices] CCK: 1254 bars via yfinance
+  [wikidata] CCK: Consumer Cyclical / Packaging & Containers
+  [794/940] ✓ CCK     1709 facts  (30.1s)
+  [prices] AGNC: 1254 bars via yfinance
+  [wikidata] AGNC: Real Estate / REIT - Mortgage
+  [795/940] ✓ AGNC     942 facts  (21.8s)
+  [prices] GGG: 1254 bars via yfinance
+  [wikidata] GGG: Industrials / Specialty Industrial Machinery
+  [796/940] ✓ GGG     1901 facts  (26.2s)
+  [prices] CLX: 1254 bars via yfinance
+  [wikidata] CLX: Consumer Defensive / Household & Personal Products
+  [797/940] ✓ CLX     1846 facts  (29.4s)
+[edgar] OBICY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0002077146.json
+  [prices] OBICY: 186 bars via yfinance
+  [wikidata] OBICY: Technology / Software - Application
+  [798/940] ✓ OBICY      8 facts  (2.8s)
+  [prices] IESC: 1253 bars via yfinance
+  [wikidata] IESC: Industrials / Engineering & Construction
+  [799/940] ✓ IESC    1895 facts  (32.7s)
+  [prices] ALLY: 1254 bars via yfinance
+  [wikidata] ALLY: Financial Services / Credit Services
+  [800/940] ✓ ALLY    1344 facts  (25.3s)
+  [prices] DKNG: 1254 bars via yfinance
+  [wikidata] DKNG: Consumer Cyclical / Gambling
+  [801/940] ✓ DKNG     542 facts  (19.9s)
+  [prices] WSE: 74 bars via yfinance
+  [wikidata] WSE: Technology / Information Technology Services
+  [802/940] ✓ WSE       77 facts  (3.2s)
+  [prices] NXT: 888 bars via yfinance
+  [wikidata] NXT: Technology / Solar
+  [803/940] ✓ NXT      545 facts  (16.7s)
+  [prices] DTM: 1254 bars via yfinance
+  [wikidata] DTM: Energy / Oil & Gas Midstream
+  [804/940] ✓ DTM      648 facts  (17.8s)
+  [prices] WSO: 1254 bars via yfinance
+  [wikidata] WSO: Industrials / Industrial Distribution
+  [805/940] ✓ WSO     1862 facts  (25.2s)
+  [prices] COKE: 1254 bars via yfinance
+  [wikidata] COKE: Consumer Defensive / Beverages - Non-Alcoholic
+  [806/940] ✓ COKE    1776 facts  (23.7s)
+  [prices] IT: 1254 bars via yfinance
+  [wikidata] IT: Technology / Information Technology Services
+  [807/940] ✓ IT      2035 facts  (32.9s)
+  [prices] GLPI: 1254 bars via yfinance
+  [wikidata] GLPI: Real Estate / REIT - Specialty
+  [808/940] ✓ GLPI    1319 facts  (22.7s)
+  [prices] ELS: 1254 bars via yfinance
+  [wikidata] ELS: Real Estate / REIT - Residential
+  [809/940] ✓ ELS     1215 facts  (24.8s)
+  [prices] PEN: 1254 bars via yfinance
+  [wikidata] PEN: Healthcare / Medical Devices
+  [810/940] ✓ PEN     1480 facts  (25.7s)
+  [prices] GDDY: 1254 bars via yfinance
+  [wikidata] GDDY: Technology / Software - Infrastructure
+  [811/940] ✓ GDDY    1275 facts  (25.5s)
+  [prices] FNF: 1254 bars via yfinance
+  [wikidata] FNF: Financial Services / Insurance - Specialty
+  [812/940] ✓ FNF     1374 facts  (24.4s)
+  [prices] BMRN: 1254 bars via yfinance
+  [wikidata] BMRN: Healthcare / Biotechnology
+  [813/940] ✓ BMRN    2041 facts  (32.2s)
+  [prices] BJ: 1254 bars via yfinance
+  [wikidata] BJ: Consumer Defensive / Discount Stores
+  [814/940] ✓ BJ      1123 facts  (21.0s)
+  [prices] DECK: 1254 bars via yfinance
+  [wikidata] DECK: Consumer Cyclical / Footwear & Accessories
+  [815/940] ✓ DECK    1716 facts  (30.4s)
+  [prices] MAIR: 91 bars via yfinance
+  [wikidata] MAIR: Industrials / Building Products & Equipment
+  [816/940] ✓ MAIR      64 facts  (4.3s)
+  [prices] FMS: 1254 bars via yfinance
+  [wikidata] FMS: Healthcare / Medical Care Facilities
+  [817/940] ✓ FMS      991 facts  (19.9s)
+[edgar] YARIY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001279956.json
+  [prices] YARIY: 1254 bars via yfinance
+  [wikidata] YARIY: Basic Materials / Agricultural Inputs
+  [818/940] ✓ YARIY      8 facts  (9.4s)
+  [prices] IAG: 1254 bars via yfinance
+  [wikidata] IAG: Basic Materials / Gold
+  [819/940] ✓ IAG        8 facts  (10.5s)
+  [prices] WTS: 1254 bars via yfinance
+  [wikidata] WTS: Industrials / Specialty Industrial Machinery
+  [820/940] ✓ WTS     2043 facts  (27.7s)
+  [prices] AIT: 1254 bars via yfinance
+  [wikidata] AIT: Industrials / Industrial Distribution
+  [821/940] ✓ AIT     1896 facts  (31.3s)
+  [prices] MANH: 1254 bars via yfinance
+  [wikidata] MANH: Technology / Software - Application
+  [822/940] ✓ MANH    1817 facts  (30.1s)
+  [prices] SNN: 1254 bars via yfinance
+  [wikidata] SNN: Healthcare / Medical Devices
+  [823/940] ✓ SNN        8 facts  (11.0s)
+  [prices] CHYM: 302 bars via yfinance
+  [wikidata] CHYM: Technology / Software - Application
+  [824/940] ✓ CHYM     236 facts  (11.1s)
+  [prices] MICC: 179 bars via yfinance
+  [wikidata] MICC: Consumer Defensive / Packaged Foods
+  [825/940] ✓ MICC       8 facts  (3.1s)
+  [prices] UDR: 1254 bars via yfinance
+  [wikidata] UDR: Real Estate / REIT - Residential
+  [826/940] ✓ UDR     1318 facts  (23.3s)
+  [prices] HALO: 1254 bars via yfinance
+  [wikidata] HALO: Healthcare / Biotechnology
+  [827/940] ✓ HALO    1924 facts  (31.2s)
+[edgar] BZLFY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001072397.json
+  [prices] BZLFY: 1254 bars via yfinance
+  [wikidata] BZLFY: Consumer Defensive / Food Distribution
+  [828/940] ✓ BZLFY      8 facts  (10.4s)
+  [prices] ARWR: 1254 bars via yfinance
+  [wikidata] ARWR: Healthcare / Biotechnology
+  [829/940] ✓ ARWR    1519 facts  (25.3s)
+  [prices] AHR: 639 bars via yfinance
+  [wikidata] AHR: Real Estate / REIT - Healthcare Facilities
+  [830/940] ✓ AHR      961 facts  (19.0s)
+  [prices] PAC: 1254 bars via yfinance
+  [wikidata] PAC: Industrials / Airports & Air Services
+  [831/940] ✓ PAC        8 facts  (10.9s)
+  [prices] SF: 1254 bars via yfinance
+  [wikidata] SF: Financial Services / Capital Markets
+  [832/940] ✓ SF      1370 facts  (27.0s)
+  [prices] ELAN: 1254 bars via yfinance
+  [wikidata] ELAN: Healthcare / Drug Manufacturers - Specialty & Generic
+  [833/940] ✓ ELAN    1186 facts  (26.1s)
+  [prices] HUBS: 1254 bars via yfinance
+  [wikidata] HUBS: Technology / Software - Application
+  [834/940] ✓ HUBS    1462 facts  (28.4s)
+  [prices] AKZOY: 1254 bars via yfinance
+  [wikidata] AKZOY: Basic Materials / Specialty Chemicals
+  [835/940] ✓ AKZOY      8 facts  (10.6s)
+  [prices] JKHY: 1254 bars via yfinance
+  [wikidata] JKHY: Technology / Information Technology Services
+  [836/940] ✓ JKHY    2015 facts  (29.9s)
+  [prices] EGO: 1254 bars via yfinance
+  [wikidata] EGO: Basic Materials / Gold
+  [837/940] ✓ EGO        8 facts  (10.8s)
+  [prices] MOG-A: 1254 bars via yfinance
+  [wikidata] MOG-A: Industrials / Aerospace & Defense
+  [838/940] ✓ MOG-A   2126 facts  (29.7s)
+  [prices] GNRC: 1254 bars via yfinance
+  [wikidata] GNRC: Industrials / Specialty Industrial Machinery
+  [839/940] ✓ GNRC    2032 facts  (32.9s)
+  [prices] CART: 736 bars via yfinance
+  [wikidata] CART: Consumer Cyclical / Internet Retail
+  [840/940] ✓ CART     452 facts  (15.8s)
+  [prices] RTO: 1254 bars via yfinance
+  [wikidata] RTO: Industrials / Specialty Business Services
+  [841/940] ✓ RTO        8 facts  (10.8s)
+  [prices] AFG: 1254 bars via yfinance
+  [wikidata] AFG: Financial Services / Insurance - Property & Casualty
+  [842/940] ✓ AFG     1435 facts  (25.6s)
+  [prices] JEF: 1254 bars via yfinance
+  [wikidata] JEF: Financial Services / Capital Markets
+  [843/940] ✓ JEF     1849 facts  (29.9s)
+  [prices] DOCU: 1254 bars via yfinance
+  [wikidata] DOCU: Technology / Software - Application
+  [844/940] ✓ DOCU    1087 facts  (23.0s)
+  [prices] TEM: 550 bars via yfinance
+  [wikidata] TEM: Healthcare / Health Information Services
+  [845/940] ✓ TEM      350 facts  (13.8s)
+  [prices] EHC: 1254 bars via yfinance
+  [wikidata] EHC: Healthcare / Medical Care Facilities
+  [846/940] ✓ EHC     1647 facts  (30.6s)
+  [prices] CR: 855 bars via yfinance
+  [wikidata] CR: Industrials / Specialty Industrial Machinery
+  [847/940] ✓ CR       534 facts  (14.6s)
+  [prices] AMKR: 1254 bars via yfinance
+  [wikidata] AMKR: Technology / Semiconductor Equipment & Materials
+  [848/940] ✓ AMKR    2184 facts  (35.5s)
+  [prices] PNW: 1254 bars via yfinance
+  [wikidata] PNW: Utilities / Utilities - Regulated Electric
+  [849/940] ✓ PNW     1588 facts  (28.1s)
+[edgar] TMTNY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0002072098.json
+  [prices] TMTNY: 121 bars via yfinance
+  [wikidata] TMTNY: Industrials / Industrial Distribution
+  [850/940] ✓ TMTNY      8 facts  (2.6s)
+  [prices] MDGL: 1254 bars via yfinance
+  [wikidata] MDGL: Healthcare / Biotechnology
+  [851/940] ✓ MDGL    1217 facts  (24.2s)
+  [prices] BTSG: 647 bars via yfinance
+  [wikidata] BTSG: Healthcare / Health Information Services
+  [852/940] ✓ BTSG     433 facts  (13.0s)
+  [prices] WTRG: 1254 bars via yfinance
+  [wikidata] WTRG: Utilities / Utilities - Regulated Water
+  [853/940] ✓ WTRG    1840 facts  (28.1s)
+  [prices] AR: 1254 bars via yfinance
+  [wikidata] AR: Energy / Oil & Gas E&P
+  [854/940] ✓ AR      1383 facts  (28.5s)
+  [prices] FHN: 1254 bars via yfinance
+  [wikidata] FHN: Financial Services / Banks - Regional
+  [855/940] ✓ FHN     1314 facts  (27.0s)
+  [prices] OC: 1254 bars via yfinance
+  [wikidata] OC: Industrials / Building Products & Equipment
+  [856/940] ✓ OC      1979 facts  (33.8s)
+  [prices] PSKY: 1254 bars via yfinance
+  [wikidata] PSKY: Communication Services / Entertainment
+  [857/940] ✓ PSKY     213 facts  (15.5s)
+  [prices] HII: 1254 bars via yfinance
+  [wikidata] HII: Industrials / Aerospace & Defense
+  [858/940] ✓ HII     1886 facts  (32.1s)
+  [prices] DPZ: 1254 bars via yfinance
+  [wikidata] DPZ: Consumer Cyclical / Restaurants
+  [859/940] ✓ DPZ     1821 facts  (29.1s)
+  [prices] NVMI: 1254 bars via yfinance
+  [wikidata] NVMI: Technology / Semiconductor Equipment & Materials
+  [860/940] ✓ NVMI     582 facts  (18.5s)
+  [prices] BNT: 1254 bars via yfinance
+  [wikidata] BNT: Financial Services / Insurance - Diversified
+  [861/940] ✓ BNT      178 facts  (12.7s)
+  [prices] SCI: 1254 bars via yfinance
+  [wikidata] SCI: Consumer Cyclical / Personal Services
+  [862/940] ✓ SCI     1947 facts  (31.1s)
+  [prices] AUR: 1254 bars via yfinance
+  [wikidata] AUR: Consumer Cyclical / Auto Parts
+  [863/940] ✓ AUR      578 facts  (19.7s)
+  [prices] BSY: 1254 bars via yfinance
+  [wikidata] BSY: Technology / Software - Application
+  [864/940] ✓ BSY      839 facts  (23.6s)
+  [prices] RYAN: 1254 bars via yfinance
+  [wikidata] RYAN: Financial Services / Insurance - Specialty
+  [865/940] ✓ RYAN     537 facts  (20.1s)
+  [prices] ALGN: 1254 bars via yfinance
+  [wikidata] ALGN: Healthcare / Medical Instruments & Supplies
+  [866/940] ✓ ALGN    2109 facts  (31.4s)
+  [prices] GMED: 1254 bars via yfinance
+  [wikidata] GMED: Healthcare / Medical Devices
+  [867/940] ✓ GMED    1826 facts  (28.4s)
+  [prices] TTMI: 1254 bars via yfinance
+  [wikidata] TTMI: Technology / Electronic Components
+  [868/940] ✓ TTMI    1883 facts  (29.7s)
+  [prices] TECH: 1254 bars via yfinance
+  [wikidata] TECH: Healthcare / Biotechnology
+  [869/940] ✓ TECH    2035 facts  (33.1s)
+[edgar] PUGBY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0002029472.json
+  [prices] PUGBY: 410 bars via yfinance
+  [wikidata] PUGBY: Consumer Defensive / Household & Personal Products
+  [870/940] ✓ PUGBY      8 facts  (4.6s)
+  [prices] SMTC: 1254 bars via yfinance
+  [wikidata] SMTC: Technology / Semiconductors
+  [871/940] ✓ SMTC    2083 facts  (30.5s)
+  [prices] DVA: 1254 bars via yfinance
+  [wikidata] DVA: Healthcare / Medical Care Facilities
+  [872/940] ✓ DVA     1960 facts  (39.7s)
+  [prices] KNX: 1254 bars via yfinance
+  [wikidata] KNX: Industrials / Trucking
+  [873/940] ✓ KNX     1777 facts  (33.8s)
+  [prices] MGM: 1254 bars via yfinance
+  [wikidata] MGM: Consumer Cyclical / Resorts & Casinos
+  [874/940] ✓ MGM     2013 facts  (31.7s)
+  [prices] BXP: 1254 bars via yfinance
+  [wikidata] BXP: Real Estate / REIT - Office
+  [875/940] ✓ BXP     1202 facts  (27.8s)
+  [prices] SUZ: 1254 bars via yfinance
+  [wikidata] SUZ: Basic Materials / Paper & Paper Products
+  [876/940] ✓ SUZ        8 facts  (13.1s)
+  [prices] TFII: 1254 bars via yfinance
+  [wikidata] TFII: Industrials / Trucking
+  [877/940] ✓ TFII       8 facts  (11.5s)
+  [prices] EVR: 1254 bars via yfinance
+  [wikidata] EVR: Financial Services / Capital Markets
+  [878/940] ✓ EVR     1537 facts  (35.3s)
+  [prices] FROG: 1254 bars via yfinance
+  [wikidata] FROG: Technology / Software - Application
+  [879/940] ✓ FROG     836 facts  (23.8s)
+  [prices] AEIS: 1254 bars via yfinance
+  [wikidata] AEIS: Industrials / Electrical Equipment & Parts
+  [880/940] ✓ AEIS    2115 facts  (33.8s)
+  [prices] CPT: 1254 bars via yfinance
+  [wikidata] CPT: Real Estate / REIT - Residential
+  [881/940] ✓ CPT     1167 facts  (24.7s)
+  [prices] GKOS: 1254 bars via yfinance
+  [wikidata] GKOS: Healthcare / Medical Devices
+  [882/940] ✓ GKOS    1490 facts  (30.5s)
+  [prices] UMBF: 1254 bars via yfinance
+  [wikidata] UMBF: Financial Services / Banks - Regional
+  [883/940] ✓ UMBF    1543 facts  (28.6s)
+  [prices] EAT: 1254 bars via yfinance
+  [wikidata] EAT: Consumer Cyclical / Restaurants
+  [884/940] ✓ EAT     1737 facts  (26.3s)
+  [prices] NYT: 1254 bars via yfinance
+  [wikidata] NYT: Communication Services / Publishing
+  [885/940] ✓ NYT     1907 facts  (30.3s)
+  [prices] EGP: 1254 bars via yfinance
+  [wikidata] EGP: Real Estate / REIT - Industrial
+  [886/940] ✓ EGP     1225 facts  (24.9s)
+[edgar] DLAKY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001049724.json
+  [prices] DLAKY: 1254 bars via yfinance
+  [wikidata] DLAKY: Industrials / Airlines
+  [887/940] ✓ DLAKY      8 facts  (11.2s)
+  [prices] FDS: 1254 bars via yfinance
+  [wikidata] FDS: Financial Services / Financial Data & Stock Exchanges
+  [888/940] ✓ FDS     2087 facts  (25.8s)
+  [prices] ENLT: 914 bars via yfinance
+  [wikidata] ENLT: Utilities / Utilities - Renewable
+  [889/940] ✓ ENLT       8 facts  (12.7s)
+  [prices] ALSN: 1254 bars via yfinance
+  [wikidata] ALSN: Consumer Cyclical / Auto Parts
+  [890/940] ✓ ALSN    1957 facts  (34.1s)
+  [prices] RRX: 1254 bars via yfinance
+  [wikidata] RRX: Industrials / Specialty Industrial Machinery
+  [891/940] ✓ RRX     2094 facts  (34.0s)
+[edgar] NCLTY request failed: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001801729.json
+  [prices] NCLTY: 1254 bars via yfinance
+  [wikidata] NCLTY: Consumer Cyclical / Furnishings, Fixtures & Appliances
+  [892/940] ✓ NCLTY      8 facts  (11.1s)
+  [prices] AXSM: 1254 bars via yfinance
+  [wikidata] AXSM: Healthcare / Biotechnology
+  [893/940] ✓ AXSM    1032 facts  (24.7s)
+  [prices] BPOP: 1254 bars via yfinance
+  [wikidata] BPOP: Financial Services / Banks - Regional
+  [894/940] ✓ BPOP    1189 facts  (27.6s)
+  [prices] CYTK: 1254 bars via yfinance
+  [wikidata] CYTK: Healthcare / Biotechnology
+  [895/940] ✓ CYTK    1480 facts  (29.3s)
+  [prices] GSAT: 1254 bars via yfinance
+  [wikidata] GSAT: Communication Services / Telecom Services
+  [896/940] ✓ GSAT    1724 facts  (34.1s)
+  [prices] WMS: 1254 bars via yfinance
+  [wikidata] WMS: Industrials / Building Products & Equipment
+  [897/940] ✓ WMS     1466 facts  (28.5s)
+  [prices] AES: 1254 bars via yfinance
+  [wikidata] AES: Utilities / Utilities - Diversified
+  [898/940] ✓ AES     1940 facts  (29.7s)
+  [prices] AM: 1254 bars via yfinance
+  [wikidata] AM: Energy / Oil & Gas Midstream
+  [899/940] ✓ AM       975 facts  (24.3s)
+  [prices] ENSG: 1254 bars via yfinance
+  [wikidata] ENSG: Healthcare / Medical Care Facilities
+  [900/940] ✓ ENSG    1907 facts  (33.0s)
+  [prices] MUSA: 1254 bars via yfinance
+  [wikidata] MUSA: Consumer Cyclical / Specialty Retail
+  [901/940] ✓ MUSA    1342 facts  (26.0s)
+  [prices] DRS: 1254 bars via yfinance
+  [wikidata] DRS: Industrials / Aerospace & Defense
+  [902/940] ✓ DRS      740 facts  (22.5s)
+  [prices] UHS: 1254 bars via yfinance
+  [wikidata] UHS: Healthcare / Medical Care Facilities
+  [903/940] ✓ UHS     1686 facts  (29.3s)
+  [prices] SSB: 1254 bars via yfinance
+  [wikidata] SSB: Financial Services / Banks - Regional
+  [904/940] ✓ SSB     1202 facts  (25.7s)
+  [prices] MOH: 1254 bars via yfinance
+  [wikidata] MOH: Healthcare / Healthcare Plans
+  [905/940] ✓ MOH     1698 facts  (30.3s)
+  [prices] PAYC: 1254 bars via yfinance
+  [wikidata] PAYC: Technology / Software - Application
+  [906/940] ✓ PAYC    1760 facts  (28.8s)
+  [prices] IONS: 1254 bars via yfinance
+  [wikidata] IONS: Healthcare / Biotechnology
+  [907/940] ✓ IONS    1818 facts  (35.0s)
+  [prices] PAYP: 115 bars via yfinance
+  [wikidata] PAYP: Technology / Software - Infrastructure
+  [908/940] ✓ PAYP       8 facts  (3.3s)
+  [prices] SAIL: 384 bars via yfinance
+  [wikidata] SAIL: Technology / Software - Infrastructure
+  [909/940] ✓ SAIL     259 facts  (10.0s)
+  [prices] PRAX: 1254 bars via yfinance
+  [wikidata] PRAX: Healthcare / Biotechnology
+  [910/940] ✓ PRAX     569 facts  (18.5s)
+  [prices] ARW: 1254 bars via yfinance
+  [wikidata] ARW: Technology / Electronics & Computer Distribution
+  [911/940] ✓ ARW     2000 facts  (30.1s)
+  [prices] AG: 1254 bars via yfinance
+  [wikidata] AG: Basic Materials / Silver
+  [912/940] ✓ AG         8 facts  (11.0s)
+  [prices] FCFS: 1254 bars via yfinance
+  [wikidata] FCFS: Financial Services / Credit Services
+  [913/940] ✓ FCFS    1769 facts  (29.1s)
+  [prices] WTFC: 1254 bars via yfinance
+  [wikidata] WTFC: Financial Services / Banks - Regional
+  [914/940] ✓ WTFC    1364 facts  (26.7s)
+  [prices] RGEN: 1254 bars via yfinance
+  [wikidata] RGEN: Healthcare / Medical Instruments & Supplies
+  [915/940] ✓ RGEN    2026 facts  (32.4s)
+  [prices] LFUS: 1254 bars via yfinance
+  [wikidata] LFUS: Technology / Electronic Components
+  [916/940] ✓ LFUS    2155 facts  (33.0s)
+  [prices] WYNN: 1254 bars via yfinance
+  [wikidata] WYNN: Consumer Cyclical / Resorts & Casinos
+  [917/940] ✓ WYNN    2091 facts  (32.0s)
+  [prices] FLS: 1254 bars via yfinance
+  [wikidata] FLS: Industrials / Specialty Industrial Machinery
+  [918/940] ✓ FLS     2107 facts  (34.4s)
+  [prices] MP: 1254 bars via yfinance
+  [wikidata] MP: Basic Materials / Other Industrial Metals & Mining
+  [919/940] ✓ MP       763 facts  (21.5s)
+  [prices] LTH: 1225 bars via yfinance
+  [wikidata] LTH: Consumer Cyclical / Leisure
+  [920/940] ✓ LTH      724 facts  (22.9s)
+  [prices] CFR: 1254 bars via yfinance
+  [wikidata] CFR: Financial Services / Banks - Regional
+  [921/940] ✓ CFR     1282 facts  (29.8s)
+  [prices] FRT: 1254 bars via yfinance
+  [wikidata] FRT: Real Estate / REIT - Retail
+  [922/940] ✓ FRT     1145 facts  (22.7s)
+  [prices] BIO: 1254 bars via yfinance
+  [wikidata] BIO: Healthcare / Medical Devices
+  [923/940] ✓ BIO     2129 facts  (33.4s)
+  [prices] APGE: 782 bars via yfinance
+  [wikidata] APGE: Healthcare / Biotechnology
+  [924/940] ✓ APGE     302 facts  (14.1s)
+  [prices] RDY: 1254 bars via yfinance
+  [wikidata] RDY: Healthcare / Drug Manufacturers - Specialty & Generic
+  [925/940] ✓ RDY        8 facts  (11.0s)
+  [prices] GIL: 1254 bars via yfinance
+  [wikidata] GIL: Consumer Cyclical / Apparel Manufacturing
+  [926/940] ✓ GIL        8 facts  (11.1s)
+  [prices] SMMT: 1254 bars via yfinance
+  [wikidata] SMMT: Healthcare / Biotechnology
+  [927/940] ✓ SMMT     755 facts  (19.1s)
+  [prices] ORI: 1254 bars via yfinance
+  [wikidata] ORI: Financial Services / Insurance - Property & Casualty
+  [928/940] ✓ ORI      908 facts  (23.8s)
+  [prices] ABVX: 713 bars via yfinance
+  [wikidata] ABVX: Healthcare / Biotechnology
+  [929/940] ✓ ABVX       8 facts  (5.8s)
+  [prices] KRYS: 1254 bars via yfinance
+  [wikidata] KRYS: Healthcare / Biotechnology
+  [930/940] ✓ KRYS     836 facts  (20.5s)
+  [prices] PNR: 1254 bars via yfinance
+  [wikidata] PNR: Industrials / Specialty Industrial Machinery
+  [931/940] ✓ PNR     2159 facts  (31.7s)
+  [prices] PODD: 1254 bars via yfinance
+  [wikidata] PODD: Healthcare / Medical Devices
+  [932/940] ✓ PODD    1962 facts  (32.1s)
+  [prices] AYI: 1254 bars via yfinance
+  [wikidata] AYI: Industrials / Electrical Equipment & Parts
+  [933/940] ✓ AYI     2011 facts  (25.7s)
+  [prices] SPXC: 1254 bars via yfinance
+  [wikidata] SPXC: Industrials / Building Products & Equipment
+  [934/940] ✓ SPXC    2153 facts  (35.0s)
+  [prices] SWKS: 1254 bars via yfinance
+  [wikidata] SWKS: Technology / Semiconductors
+  [935/940] ✓ SWKS    2138 facts  (31.8s)
+  [prices] FRHC: 1254 bars via yfinance
+  [wikidata] FRHC: Financial Services / Financial Conglomerates
+  [936/940] ✓ FRHC    1181 facts  (27.6s)
+  [prices] CHWY: 1254 bars via yfinance
+  [wikidata] CHWY: Consumer Cyclical / Internet Retail
+  [937/940] ✓ CHWY     825 facts  (24.9s)
+  [prices] PTGX: 1254 bars via yfinance
+  [wikidata] PTGX: Healthcare / Biotechnology
+  [938/940] ✓ PTGX     927 facts  (25.5s)
+  [prices] PSO: 1254 bars via yfinance
+  [wikidata] PSO: Communication Services / Publishing
+  [939/940] ✓ PSO        8 facts  (15.2s)
+  [prices] MOD: 1254 bars via yfinance
+  [wikidata] MOD: Consumer Cyclical / Auto Parts
+  [940/940] ✓ MOD     1915 facts  (37.9s)
+
+✅ Ingest done: 940/940 processed, 6 had partial failures
+   Failure log: config/ingest_failures.json

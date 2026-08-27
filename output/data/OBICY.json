@@ -1,0 +1,31 @@
+{
+  "ticker": "OBICY",
+  "metrics": {
+    "short_interest": 12.4,
+    "insider_buy_count": 0.0,
+    "insider_sell_count": 0.0,
+    "insider_net_shares": 0.0,
+    "insider_buy_value": 0.0,
+    "insider_sell_value": 0.0,
+    "insider_sentiment": 50.0,
+    "price": 15.020000457763672,
+    "volatility_annual": 36.546,
+    "annual_return": -11.424,
+    "sharpe_ratio": -0.422,
+    "sortino_ratio": -0.613,
+    "max_drawdown": -29.687,
+    "return_1m": 7.439,
+    "beta": 0.576,
+    "value_score": 50.0,
+    "quality_score": 50.0,
+    "momentum_score": 43.2,
+    "health_score": 50.0,
+    "stochastic_k": 75.8664,
+    "stochastic_d": 76.9636,
+    "williams_r": -24.1336,
+    "obv": -2756374.0,
+    "cci_20": 114.7616,
+    "mfi_14": 79.486,
+    "adx_14": 22.2341
+  }
+}

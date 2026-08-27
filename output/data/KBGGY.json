@@ -1,0 +1,17 @@
+{
+  "ticker": "KBGGY",
+  "metrics": {
+    "short_interest": 12.4,
+    "insider_buy_count": 0.0,
+    "insider_sell_count": 0.0,
+    "insider_net_shares": 0.0,
+    "insider_buy_value": 0.0,
+    "insider_sell_value": 0.0,
+    "insider_sentiment": 50.0,
+    "price": 16.860000610351562,
+    "value_score": 50.0,
+    "quality_score": 50.0,
+    "momentum_score": 70.2,
+    "health_score": 50.0
+  }
+}
