@@ -5,3 +5,5 @@ __pycache__/
 _ticker_cik_cache.json
 screener.duckdb
 ingest.log
+config/ingest_checkpoint.json
+config/ingest_failures.json
