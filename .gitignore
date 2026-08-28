@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .env
 _ticker_cik_cache.json
+screener.duckdb
+ingest.log
