@@ -1,7 +1,7 @@
 name: Weekly Fundamental Refresh
 on:
   schedule:
-    - cron: '0 8 * * 0'      # 9:00 UTC weekdays (after US close)
+    - cron: '0 8 * * 0'      # 8:00 UTC Sundays
   workflow_dispatch:            # allow manual runs
 jobs:
   refresh:
@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install -r requirements.txt
-      - name: Run daily pipeline
+      - name: Run fundamental pipeline
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           TIINGO_API_KEY: ${{ secrets.TIINGO_API_KEY }}
@@ -20,8 +20,8 @@ jobs:
         run: |
           git config user.name "screener-bot"
           git config user.email "bot@screener"
-          git add output/ screener.duckdb
-          git commit -m "Daily refresh $(date -u +%F)" || echo "no changes"
+          git add output/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Weekly refresh $(date -u +%F)"
           git push
       - name: Email on failure
         if: failure()
@@ -34,4 +34,4 @@ jobs:
           subject: "❌ Stock Screener WEEKLY run failed"
           to: Reedspams@gmail.com
           from: Screener Bot
-          body: "The daily refresh failed on ${{ github.run_id }}. Check the Actions log."
+          body: "The weekly refresh failed on ${{ github.run_id }}. Check the Actions log."
