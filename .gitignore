@@ -7,3 +7,5 @@ screener.duckdb
 ingest.log
 config/ingest_checkpoint.json
 config/ingest_failures.json
+config/ingest_checkpoint.json
+config/ingest_failures.json
