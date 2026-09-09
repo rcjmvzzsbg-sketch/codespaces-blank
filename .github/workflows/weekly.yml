@@ -2,13 +2,12 @@ name: Weekly Fundamental Refresh
 
 on:
   schedule:
-    - cron: '0 8 * * 0'  # Runs at 08:00 UTC every Sunday
-  workflow_dispatch:      # Allows manual trigger
+    - cron: '0 8 * * 0'
+  workflow_dispatch:
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

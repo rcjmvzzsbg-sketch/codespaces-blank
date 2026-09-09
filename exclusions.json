@@ -1,0 +1,27 @@
+{
+  "excluded_industries": [
+    "Oil & Gas Integrated",
+    "Oil & Gas E&P",
+    "Oil & Gas Refining & Marketing",
+    "Oil & Gas Midstream",
+    "Oil & Gas Equipment & Services",
+    "Oil & Gas Drilling",
+    "Insurance - Diversified",
+    "Insurance - Life",
+    "Insurance - Property & Casualty",
+    "Insurance - Reinsurance",
+    "Insurance - Specialty",
+    "Insurance Brokers",
+    "Airlines",
+    "Tobacco",
+    "Beverages - Wineries & Distilleries",
+    "Beverages - Brewers"
+  ],
+  "excluded_tickers": [
+    "WFC"
+  ],
+  "keep_always": [
+    "BRK-B"
+  ],
+  "notes": "Negative screen: oil, insurance (except shipping), airlines, tobacco, alcohol, cannabis, payday lending, Wells Fargo. Defense KEPT. Shipping insurance KEPT via keep_always."
+}
