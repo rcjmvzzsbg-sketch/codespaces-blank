@@ -9,9 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: {python-version: '3.12'}
+        with:
+          python-version: '3.12'
       - run: pip install -r requirements.txt
-      - name: Run daily pipeline
+      - name: "Run daily pipeline (self-contained - ingest, derive, export)"
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           TIINGO_API_KEY: ${{ secrets.TIINGO_API_KEY }}
@@ -20,7 +21,7 @@ jobs:
         run: |
           git config user.name "screener-bot"
           git config user.email "bot@screener"
-          git add output/ screener.duckdb
+          git add output/
           git commit -m "Daily refresh $(date -u +%F)" || echo "no changes"
           git push
       - name: Email on failure
