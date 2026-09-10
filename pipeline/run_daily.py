@@ -3,7 +3,7 @@
 import subprocess, sys
 STEPS = ["pipeline.batch_ingest",  # Add this step to populate the DB
          "pipeline.derive", "metrics.technicals", "metrics.technicals2",
-         "metrics.risk", "metrics.ttm", "pipeline.export"]
+         "metrics.risk", "metrics.ttm", "pipeline.export", "pipeline.export_history"]
 
 def main():
     for m in STEPS:
