@@ -5,7 +5,7 @@ resumable. If it dies at ticker #600, rerun and it skips the done ones."""
 import os, time, json
 import sources                       # triggers auto-discovery of all plugins
 from core.base_source import SOURCES
-from core.database import write_facts
+from core.database import write_facts, init_db
 from config.universe import get_tickers
 
 CHECKPOINT = "config/ingest_checkpoint.json"
@@ -21,6 +21,7 @@ def _load_json(path, default):
 
 
 def run(resume=True):
+    init_db()
     done = set(_load_json(CHECKPOINT, []))
     failures = _load_json(FAILLOG, {})
     if not resume:
@@ -45,6 +46,7 @@ def run(resume=True):
                     time.sleep(SEC_SLEEP)
             except Exception as e:
                 failures.setdefault(ticker, []).append(f"{src.name}: {e}")
+                print(f"    ⚠ {src.name} error on {ticker}: {e}")
         done.add(ticker)
         json.dump(sorted(done), open(CHECKPOINT, "w"))
         json.dump(failures, open(FAILLOG, "w"), indent=2)
