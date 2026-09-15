@@ -7,7 +7,7 @@
     "sortino_ratio": -0.062,
     "max_drawdown": -27.451,
     "return_1m": -17.411,
-    "beta": 0.864,
+    "beta": 0.863,
     "short_interest": 12.4,
     "insider_buy_count": 0.0,
     "insider_sell_count": 0.0,
@@ -19,9 +19,9 @@
     "stochastic_k": 0.0,
     "stochastic_d": 21.6149,
     "williams_r": -100.0,
-    "obv": 267.0,
-    "cci_20": -371.2746,
-    "mfi_14": 63.0596,
+    "obv": -1133.0,
+    "cci_20": -368.6093,
+    "mfi_14": 46.1855,
     "adx_14": 87.4048
   }
 }
