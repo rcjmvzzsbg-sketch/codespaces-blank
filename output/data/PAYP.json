@@ -1,13 +1,13 @@
 {
   "ticker": "PAYP",
   "metrics": {
-    "volatility_annual": 78.349,
-    "annual_return": -10.77,
-    "sharpe_ratio": -0.189,
-    "sortino_ratio": -0.353,
+    "volatility_annual": 78.849,
+    "annual_return": -17.278,
+    "sharpe_ratio": -0.27,
+    "sortino_ratio": -0.5,
     "max_drawdown": -49.634,
-    "return_1m": 12.5,
-    "beta": 1.823,
+    "return_1m": 8.092,
+    "beta": 1.869,
     "short_interest": 12.4,
     "insider_buy_count": 0.0,
     "insider_sell_count": 0.0,
@@ -15,13 +15,13 @@
     "insider_buy_value": 0.0,
     "insider_sell_value": 0.0,
     "insider_sentiment": 50.0,
-    "price": 17.100000381469727,
-    "stochastic_k": 53.8084,
-    "stochastic_d": 63.8821,
-    "williams_r": -46.1916,
-    "obv": 10719766.0,
-    "cci_20": 24.1517,
-    "mfi_14": 82.2322,
-    "adx_14": 56.7724
+    "price": 16.43000030517578,
+    "stochastic_k": 37.3465,
+    "stochastic_d": 58.3948,
+    "williams_r": -62.6535,
+    "obv": 10554743.0,
+    "cci_20": -19.7619,
+    "mfi_14": 81.2973,
+    "adx_14": 55.5243
   }
 }
