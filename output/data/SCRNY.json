@@ -9,19 +9,19 @@
     "insider_sell_value": 0.0,
     "insider_sentiment": 50.0,
     "price": 16.200000762939453,
-    "volatility_annual": 79.159,
-    "annual_return": 70.649,
-    "sharpe_ratio": 0.842,
-    "sortino_ratio": 0.752,
+    "volatility_annual": 78.83,
+    "annual_return": 69.897,
+    "sharpe_ratio": 0.836,
+    "sortino_ratio": 0.744,
     "max_drawdown": -32.565,
-    "return_1m": -1.759,
-    "beta": -0.509,
+    "return_1m": 3.06,
+    "beta": -0.501,
     "stochastic_k": 56.0976,
     "stochastic_d": 56.0976,
     "williams_r": -43.9024,
     "obv": 2397.0,
-    "cci_20": 40.182,
+    "cci_20": 35.7179,
     "mfi_14": 35.5447,
-    "adx_14": 26.7932
+    "adx_14": 25.1028
   }
 }
