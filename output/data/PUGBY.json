@@ -1,6 +1,8 @@
 {
   "ticker": "PUGBY",
   "metrics": {
+    "short_interest": 12.4,
+    "price": 9.760000228881836,
     "volatility_annual": 44.671,
     "annual_return": 5.421,
     "sharpe_ratio": 0.032,
@@ -9,8 +11,6 @@
     "return_1y": 25.617,
     "return_1m": -7.488,
     "beta": 0.357,
-    "short_interest": 12.4,
-    "price": 9.760000228881836,
     "sma_20": 10.00307502746582,
     "ema_20": 9.98905090118361,
     "sma_50": 9.881780071258545,
