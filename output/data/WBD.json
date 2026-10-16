@@ -1,6 +1,7 @@
 {
   "ticker": "WBD",
   "metrics": {
+    "financing_cash_flow": -756000000.0,
     "capex": 268000000.0,
     "stock_buybacks": 0.0,
     "stock_based_comp": 152000000.0,
@@ -44,7 +45,6 @@
     "shares_outstanding": 2508000000.0,
     "operating_cash_flow": -208000000.0,
     "investing_cash_flow": -282000000.0,
-    "financing_cash_flow": -756000000.0,
     "revenue_ttm": 36115000000.0,
     "net_income_ttm": -3167000000.0,
     "operating_income_ttm": -1272000000.0,
