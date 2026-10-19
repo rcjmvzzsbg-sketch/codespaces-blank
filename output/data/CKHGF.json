@@ -14,7 +14,7 @@
     "sma_50": 283.0135876464844,
     "ema_50": 278.7415830132028,
     "sma_200": 218.76314910888672,
-    "ema_200": 228.4508885766288,
+    "ema_200": 228.4508962609396,
     "price_vs_sma50": 0.28846633568739843,
     "price_vs_sma200": 29.74305212208874,
     "golden_cross": 1.0,
@@ -33,13 +33,13 @@
     "avg_volume_20": 0.0,
     "avg_volume_50": 0.02,
     "obv": 394.0,
-    "volatility_annual": 56.982,
-    "annual_return": 87.202,
-    "sharpe_ratio": 1.46,
-    "sortino_ratio": 1.117,
+    "volatility_annual": 57.005,
+    "annual_return": 87.296,
+    "sharpe_ratio": 1.461,
+    "sortino_ratio": 1.119,
     "max_drawdown": -15.654,
     "return_1y": 157.68,
     "return_1m": 0.0,
-    "beta": 0.144
+    "beta": 0.142
   }
 }
