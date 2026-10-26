@@ -8,6 +8,13 @@
     "max_drawdown": -28.235,
     "return_1m": -6.314,
     "beta": 0.8,
+    "stochastic_k": 27.559,
+    "stochastic_d": 37.1391,
+    "williams_r": -72.441,
+    "obv": -11464.0,
+    "cci_20": -86.7207,
+    "mfi_14": 50.1825,
+    "adx_14": 24.5047,
     "short_interest": 12.4,
     "insider_buy_count": 0.0,
     "insider_sell_count": 0.0,
@@ -15,13 +22,6 @@
     "insider_buy_value": 0.0,
     "insider_sell_value": 0.0,
     "insider_sentiment": 50.0,
-    "price": 9.199999809265137,
-    "stochastic_k": 27.559,
-    "stochastic_d": 37.1391,
-    "williams_r": -72.441,
-    "obv": -11464.0,
-    "cci_20": -86.7207,
-    "mfi_14": 50.1825,
-    "adx_14": 24.5047
+    "price": 9.199999809265137
   }
 }
