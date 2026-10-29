@@ -1,6 +1,13 @@
 {
   "ticker": "BLMOY",
   "metrics": {
+    "volatility_annual": 53.408,
+    "annual_return": 9.905,
+    "sharpe_ratio": 0.111,
+    "sortino_ratio": 0.124,
+    "max_drawdown": -28.235,
+    "return_1m": 0.824,
+    "beta": 0.823,
     "short_interest": 12.4,
     "insider_buy_count": 0.0,
     "insider_sell_count": 0.0,
@@ -8,20 +15,13 @@
     "insider_buy_value": 0.0,
     "insider_sell_value": 0.0,
     "insider_sentiment": 50.0,
-    "price": 9.529999732971191,
-    "volatility_annual": 53.47,
-    "annual_return": 5.512,
-    "sharpe_ratio": 0.028,
-    "sortino_ratio": 0.032,
-    "max_drawdown": -28.235,
-    "return_1m": -2.953,
-    "beta": 0.817,
-    "stochastic_k": 53.5433,
-    "stochastic_d": 48.622,
-    "williams_r": -46.4567,
-    "obv": -10686.0,
-    "cci_20": 2.7367,
-    "mfi_14": 58.3673,
-    "adx_14": 20.4681
+    "price": 9.789999961853027,
+    "stochastic_k": 74.0157,
+    "stochastic_d": 64.1076,
+    "williams_r": -25.9843,
+    "obv": -9868.0,
+    "cci_20": 95.2034,
+    "mfi_14": 63.6291,
+    "adx_14": 19.041
   }
 }
