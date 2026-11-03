@@ -1,13 +1,13 @@
 {
   "ticker": "HONA",
   "metrics": {
-    "volatility_annual": 85.061,
-    "annual_return": -45.739,
-    "sharpe_ratio": -0.585,
-    "sortino_ratio": -0.862,
+    "volatility_annual": 84.649,
+    "annual_return": -43.571,
+    "sharpe_ratio": -0.562,
+    "sortino_ratio": -0.825,
     "max_drawdown": -43.849,
-    "return_1m": 1.491,
-    "beta": 1.042,
+    "return_1m": 1.722,
+    "beta": 1.05,
     "debt_to_equity": 0.0010715561376354328,
     "current_ratio": 1.2756575946480158,
     "market_cap": 0.0,
@@ -18,13 +18,13 @@
     "net_debt": -204000000.0,
     "working_capital": 1813000000.0,
     "enterprise_value": -204000000.0,
-    "stochastic_k": 25.8104,
-    "stochastic_d": 21.8122,
-    "williams_r": -74.1896,
-    "obv": -30750007.0,
-    "cci_20": -30.6889,
-    "mfi_14": 53.0762,
-    "adx_14": 19.6802,
+    "stochastic_k": 33.6009,
+    "stochastic_d": 23.2798,
+    "williams_r": -66.3991,
+    "obv": -28782341.0,
+    "cci_20": -25.0498,
+    "mfi_14": 57.1357,
+    "adx_14": 18.3552,
     "revenue": 4644000000.0,
     "cost_of_revenue": 2929000000.0,
     "rd_expense": 216000000.0,
@@ -61,6 +61,6 @@
     "insider_buy_value": 998400.0,
     "insider_sell_value": 0.0,
     "insider_sentiment": 100.0,
-    "price": 158.06199645996094
+    "price": 160.10000610351562
   }
 }
