@@ -8,6 +8,13 @@
     "insider_buy_value": 0.0,
     "insider_sell_value": 0.0,
     "insider_sentiment": 50.0,
-    "price": 19.260000228881836
+    "price": 19.020000457763672,
+    "stochastic_k": 91.9355,
+    "stochastic_d": 96.7977,
+    "williams_r": -8.0645,
+    "obv": -66987.0,
+    "cci_20": 207.4284,
+    "mfi_14": 79.0009,
+    "adx_14": 34.8227
   }
 }
