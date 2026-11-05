@@ -1,13 +1,20 @@
 {
   "ticker": "TMTNY",
   "metrics": {
-    "stochastic_k": 68.933,
-    "stochastic_d": 28.2182,
-    "williams_r": -31.067,
-    "obv": -2705315.0,
-    "cci_20": -33.6076,
-    "mfi_14": 51.8467,
-    "adx_14": 27.9314,
+    "stochastic_k": 61.435,
+    "stochastic_d": 48.6965,
+    "williams_r": -38.565,
+    "obv": -2705488.0,
+    "cci_20": -6.4454,
+    "mfi_14": 49.3808,
+    "adx_14": 26.8845,
+    "volatility_annual": 87.88,
+    "annual_return": 0.081,
+    "sharpe_ratio": -0.045,
+    "sortino_ratio": -0.058,
+    "max_drawdown": -29.101,
+    "return_1m": -6.853,
+    "beta": 1.526,
     "short_interest": 12.4,
     "insider_buy_count": 0.0,
     "insider_sell_count": 0.0,
@@ -15,13 +22,6 @@
     "insider_buy_value": 0.0,
     "insider_sell_value": 0.0,
     "insider_sentiment": 50.0,
-    "price": 29.799999237060547,
-    "volatility_annual": 88.129,
-    "annual_return": 1.655,
-    "sharpe_ratio": -0.027,
-    "sortino_ratio": -0.035,
-    "max_drawdown": -29.101,
-    "return_1m": -7.683,
-    "beta": 1.574
+    "price": 29.489999771118164
   }
 }
