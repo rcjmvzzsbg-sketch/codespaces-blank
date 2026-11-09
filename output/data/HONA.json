@@ -1,20 +1,20 @@
 {
   "ticker": "HONA",
   "metrics": {
-    "stochastic_k": 18.3572,
-    "stochastic_d": 13.8462,
-    "williams_r": -81.6428,
-    "obv": -39111100.0,
-    "cci_20": -148.8069,
-    "mfi_14": 37.5907,
-    "adx_14": 20.346,
-    "volatility_annual": 83.695,
-    "annual_return": -48.813,
-    "sharpe_ratio": -0.631,
-    "sortino_ratio": -0.933,
+    "stochastic_k": 57.7652,
+    "stochastic_d": 26.6283,
+    "williams_r": -42.2348,
+    "obv": -35452767.0,
+    "cci_20": 19.5995,
+    "mfi_14": 44.0637,
+    "adx_14": 19.1592,
+    "volatility_annual": 84.197,
+    "annual_return": -38.042,
+    "sharpe_ratio": -0.499,
+    "sortino_ratio": -0.743,
     "max_drawdown": -44.586,
-    "return_1m": -3.178,
-    "beta": 0.975,
+    "return_1m": 4.769,
+    "beta": 1.143,
     "debt_to_equity": 0.0010715561376354328,
     "current_ratio": 1.2756575946480158,
     "market_cap": 0.0,
@@ -61,6 +61,6 @@
     "insider_buy_value": 998400.0,
     "insider_sell_value": 0.0,
     "insider_sentiment": 100.0,
-    "price": 152.9199981689453
+    "price": 164.77000427246094
   }
 }
