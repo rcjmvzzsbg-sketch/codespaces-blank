@@ -1,6 +1,11 @@
 {
   "ticker": "ROKU",
   "metrics": {
+    "current_liabilities": 1461510000.0,
+    "accounts_payable": 349178000.0,
+    "long_term_debt": 0.0,
+    "total_debt": 99608000.0,
+    "deferred_revenue": 118758000.0,
     "shareholder_equity": 3035302000.0,
     "retained_earnings": -1218041000.0,
     "shares_outstanding": 147850000.0,
@@ -42,11 +47,6 @@
     "goodwill": 309406000.0,
     "intangibles": 38932000.0,
     "total_liabilities": 1888770000.0,
-    "current_liabilities": 1461510000.0,
-    "accounts_payable": 349178000.0,
-    "long_term_debt": 0.0,
-    "total_debt": 99608000.0,
-    "deferred_revenue": 118758000.0,
     "revenue_ttm": 5500494000.0,
     "net_income_ttm": 513732000.0,
     "gross_profit_ttm": 2493978000.0,
