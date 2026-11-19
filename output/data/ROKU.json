@@ -1,6 +1,11 @@
 {
   "ticker": "ROKU",
   "metrics": {
+    "shareholder_equity": 3035302000.0,
+    "retained_earnings": -1218041000.0,
+    "shares_outstanding": 147850000.0,
+    "operating_cash_flow": 199140000.0,
+    "investing_cash_flow": 15265000.0,
     "financing_cash_flow": -149731000.0,
     "capex": 3134000.0,
     "stock_buybacks": 100000000.0,
@@ -42,11 +47,6 @@
     "long_term_debt": 0.0,
     "total_debt": 99608000.0,
     "deferred_revenue": 118758000.0,
-    "shareholder_equity": 3035302000.0,
-    "retained_earnings": -1218041000.0,
-    "shares_outstanding": 147850000.0,
-    "operating_cash_flow": 199140000.0,
-    "investing_cash_flow": 15265000.0,
     "revenue_ttm": 5500494000.0,
     "net_income_ttm": 513732000.0,
     "gross_profit_ttm": 2493978000.0,
