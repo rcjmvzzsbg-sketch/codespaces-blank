@@ -39,18 +39,18 @@
     "depreciation": 240000000.0,
     "short_interest": 12.4,
     "insider_buy_count": 0.0,
-    "insider_sell_count": 8.0,
-    "insider_net_shares": -122030.0,
+    "insider_sell_count": 7.0,
+    "insider_net_shares": -87212.0,
     "insider_buy_value": 0.0,
-    "insider_sell_value": 1983442.2768,
+    "insider_sell_value": 1461172.2768,
     "insider_sentiment": 0.0,
     "price": 11.710000038146973,
     "stochastic_k": 35.6857,
     "stochastic_d": 28.5371,
     "williams_r": -64.3143,
-    "obv": -460829781.0,
+    "obv": -460585000.0,
     "cci_20": -74.1699,
-    "mfi_14": 33.3619,
+    "mfi_14": 33.4012,
     "adx_14": 30.1485,
     "volatility_annual": 74.52,
     "annual_return": -36.492,
@@ -139,7 +139,7 @@
     "low_52w": 10.329999923706055,
     "pct_from_52w_high": -47.83964525525592,
     "pct_from_52w_low": 13.359149318810658,
-    "avg_volume_20": 33951160.95,
-    "avg_volume_50": 28713732.38
+    "avg_volume_20": 33963400.0,
+    "avg_volume_50": 28718628.0
   }
 }

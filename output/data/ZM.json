@@ -1,6 +1,7 @@
 {
   "ticker": "ZM",
   "metrics": {
+    "total_liabilities": 2216190000.0,
     "current_liabilities": 2054645000.0,
     "accounts_payable": 15053000.0,
     "deferred_revenue": 1504946000.0,
@@ -41,14 +42,13 @@
     "ppe_net": 245742000.0,
     "goodwill": 622880000.0,
     "intangibles": 65615000.0,
-    "total_liabilities": 2216190000.0,
     "stochastic_k": 40.3045,
     "stochastic_d": 35.7529,
     "williams_r": -59.6955,
-    "obv": -106582174.0,
-    "cci_20": -68.7359,
-    "mfi_14": 47.2937,
-    "adx_14": 13.7203,
+    "obv": -105838700.0,
+    "cci_20": -75.4157,
+    "mfi_14": 46.7658,
+    "adx_14": 13.4952,
     "volatility_annual": 44.19,
     "annual_return": -16.728,
     "sharpe_ratio": -0.469,
@@ -115,13 +115,13 @@
     "macd_hist": -0.6995829884356084,
     "roc_20": -11.669663204015379,
     "roc_60": -6.680720616802372,
-    "atr_14": 5.051962716238839,
+    "atr_14": 5.134141104561942,
     "bollinger_pct": 33.82022561089932,
     "high_52w": 111.87999725341797,
     "low_52w": 72.72000122070312,
     "pct_from_52w_high": -20.843761411615326,
     "pct_from_52w_low": 21.782172816274702,
-    "avg_volume_20": 3731226.3,
-    "avg_volume_50": 3173750.52
+    "avg_volume_20": 3768400.0,
+    "avg_volume_50": 3188620.0
   }
 }

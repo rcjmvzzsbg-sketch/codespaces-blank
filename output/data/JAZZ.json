@@ -49,9 +49,9 @@
     "stochastic_k": 80.8084,
     "stochastic_d": 59.5753,
     "williams_r": -19.1916,
-    "obv": 18875537.0,
+    "obv": 18922700.0,
     "cci_20": 72.1812,
-    "mfi_14": 59.6074,
+    "mfi_14": 59.8031,
     "adx_14": 43.6811,
     "volatility_annual": 31.816,
     "annual_return": 14.676,
@@ -136,7 +136,7 @@
     "low_52w": 160.25,
     "pct_from_52w_high": -6.241878348686603,
     "pct_from_52w_low": 53.067078493686616,
-    "avg_volume_20": 806656.85,
-    "avg_volume_50": 818756.74
+    "avg_volume_20": 809015.0,
+    "avg_volume_50": 819700.0
   }
 }
